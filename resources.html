@@ -1,0 +1,904 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resources - NMSWorks</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Poppins:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link href="./src/styles.css" rel="stylesheet">
+</head>
+<body class="dark-theme">
+    <!-- Preloader -->
+    <div id="preloader">
+        <div class="preloader-content">
+            <div class="spinner"></div>
+            <h3>Loading NMSWorks</h3>
+        </div>
+    </div>
+
+    <!-- Header -->
+    <nav class="navbar navbar-expand-lg fixed-top" id="mainNav">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">
+                <div class="logo-container">
+                    <img src="https://images.unsplash.com/photo-1560472354-b33ff0c44a43?w=150&h=60&fit=crop&crop=center" alt="NMSWorks" class="logo">
+                    <span class="logo-text">NMSWorks</span>
+                </div>
+            </a>
+            
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="hamburger-line"></span>
+                <span class="hamburger-line"></span>
+                <span class="hamburger-line"></span>
+            </button>
+            
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">
+                            <i class="fas fa-briefcase me-2"></i>Portfolio
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="portfolio/products.html"><i class="fas fa-cube me-2"></i>Products</a></li>
+                            <li><a class="dropdown-item" href="portfolio/solutions.html"><i class="fas fa-lightbulb me-2"></i>Solutions</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="innovation.html">
+                            <i class="fas fa-rocket me-2"></i>Innovation
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="partners.html">
+                            <i class="fas fa-handshake me-2"></i>Partners
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="resources.html">
+                            <i class="fas fa-book me-2"></i>Resources
+                        </a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">
+                            <i class="fas fa-users me-2"></i>About Us
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="about/people.html"><i class="fas fa-user-friends me-2"></i>People</a></li>
+                            <li><a class="dropdown-item" href="about/management.html"><i class="fas fa-user-tie me-2"></i>Management</a></li>
+                            <li><a class="dropdown-item" href="about/news-events.html"><i class="fas fa-newspaper me-2"></i>News & Events</a></li>
+                            <li><a class="dropdown-item" href="about/life-at-nmsworks.html"><i class="fas fa-heart me-2"></i>Life at NMSWorks</a></li>
+                            <li><a class="dropdown-item" href="about/career.html"><i class="fas fa-briefcase me-2"></i>Career</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link contact-btn" href="contact.html">
+                            <i class="fas fa-envelope me-2"></i>Contact
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Page Hero Section -->
+    <section class="page-hero">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-6">
+                    <div class="hero-content" data-aos="fade-right">
+                        <div class="hero-badge">
+                            <i class="fas fa-book"></i>
+                            <span>Knowledge Center</span>
+                        </div>
+                        <h1 class="hero-title">Telecom <span class="gradient-text">Resources</span> Hub</h1>
+                        <p class="hero-subtitle">Access valuable insights, technical documentation, and industry knowledge to maximize your telecom solutions.</p>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <div class="hero-image" data-aos="fade-left">
+                        <img src="https://images.unsplash.com/photo-1519389950473-47ba0277781c?w=600&h=400&fit=crop&crop=center" alt="Resources" class="img-fluid rounded-4 shadow-lg">
+                        <div class="image-overlay"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Resource Categories Section -->
+    <section class="resource-categories py-5">
+        <div class="container">
+            <div class="row text-center mb-5">
+                <div class="col-12">
+                    <div class="section-header" data-aos="fade-up">
+                        <span class="section-badge">Knowledge Library</span>
+                        <h2 class="section-title">Resource Categories</h2>
+                        <p class="section-subtitle">Explore our comprehensive collection of telecom resources</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row g-4">
+                <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="100">
+                    <div class="resource-category-card">
+                        <div class="card-icon">
+                            <i class="fas fa-file-pdf"></i>
+                        </div>
+                        <h4>White Papers</h4>
+                        <p>In-depth analysis and insights on telecom industry trends, technologies, and best practices.</p>
+                        <a href="#whitepapers" class="btn btn-outline-primary">View White Papers</a>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="200">
+                    <div class="resource-category-card">
+                        <div class="card-icon">
+                            <i class="fas fa-book-open"></i>
+                        </div>
+                        <h4>Case Studies</h4>
+                        <p>Real-world examples of how our solutions have helped telecom operators overcome challenges.</p>
+                        <a href="#casestudies" class="btn btn-outline-primary">View Case Studies</a>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="300">
+                    <div class="resource-category-card">
+                        <div class="card-icon">
+                            <i class="fas fa-video"></i>
+                        </div>
+                        <h4>Webinars & Videos</h4>
+                        <p>Educational webinars and product demonstrations to help you get the most from our solutions.</p>
+                        <a href="#webinars" class="btn btn-outline-primary">View Webinars</a>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="400">
+                    <div class="resource-category-card">
+                        <div class="card-icon">
+                            <i class="fas fa-file-alt"></i>
+                        </div>
+                        <h4>Technical Documentation</h4>
+                        <p>Detailed guides, API documentation, and technical specifications for our products.</p>
+                        <a href="#documentation" class="btn btn-outline-primary">View Documentation</a>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="500">
+                    <div class="resource-category-card">
+                        <div class="card-icon">
+                            <i class="fas fa-graduation-cap"></i>
+                        </div>
+                        <h4>Training Materials</h4>
+                        <p>Self-paced learning resources and training materials to build expertise with our solutions.</p>
+                        <a href="#training" class="btn btn-outline-primary">View Training</a>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="600">
+                    <div class="resource-category-card">
+                        <div class="card-icon">
+                            <i class="fas fa-newspaper"></i>
+                        </div>
+                        <h4>Blog & Articles</h4>
+                        <p>Latest industry news, thought leadership articles, and insights from our experts.</p>
+                        <a href="#blog" class="btn btn-outline-primary">View Blog</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Featured Resources Section -->
+    <section id="whitepapers" class="featured-resources py-5 bg-dark-gradient">
+        <div class="container">
+            <div class="row text-center mb-5">
+                <div class="col-12">
+                    <div class="section-header" data-aos="fade-up">
+                        <span class="section-badge">Latest Insights</span>
+                        <h2 class="section-title">Featured White Papers</h2>
+                        <p class="section-subtitle">Download our latest research and thought leadership content</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row g-4">
+                <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="100">
+                    <div class="resource-card">
+                        <div class="resource-image">
+                            <img src="https://images.unsplash.com/photo-1581094794329-c8112a89af12?w=400&h=250&fit=crop&crop=center" alt="White Paper" class="img-fluid">
+                            <div class="resource-badge">White Paper</div>
+                        </div>
+                        <div class="resource-content">
+                            <h4>The Future of 5G Network Management</h4>
+                            <p>Explore how AI and automation are transforming 5G network operations and management.</p>
+                            <div class="resource-meta">
+                                <span><i class="far fa-calendar"></i> Jan 15, 2023</span>
+                                <span><i class="far fa-clock"></i> 15 min read</span>
+                            </div>
+                            <a href="#" class="btn btn-primary">
+                                <i class="fas fa-download me-2"></i>Download
+                                <span class="btn-shine"></span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="200">
+                    <div class="resource-card">
+                        <div class="resource-image">
+                            <img src="https://images.unsplash.com/photo-1581094794329-c8112a89af12?w=400&h=250&fit=crop&crop=center" alt="White Paper" class="img-fluid">
+                            <div class="resource-badge">White Paper</div>
+                        </div>
+                        <div class="resource-content">
+                            <h4>Optimizing OSS/BSS for Digital Transformation</h4>
+                            <p>Learn strategies for modernizing operational and business support systems in the digital era.</p>
+                            <div class="resource-meta">
+                                <span><i class="far fa-calendar"></i> Mar 22, 2023</span>
+                                <span><i class="far fa-clock"></i> 20 min read</span>
+                            </div>
+                            <a href="#" class="btn btn-primary">
+                                <i class="fas fa-download me-2"></i>Download
+                                <span class="btn-shine"></span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="300">
+                    <div class="resource-card">
+                        <div class="resource-image">
+                            <img src="https://images.unsplash.com/photo-1581094794329-c8112a89af12?w=400&h=250&fit=crop&crop=center" alt="White Paper" class="img-fluid">
+                            <div class="resource-badge">White Paper</div>
+                        </div>
+                        <div class="resource-content">
+                            <h4>Cybersecurity in Telecom Networks</h4>
+                            <p>Comprehensive guide to securing telecom infrastructure against evolving cyber threats.</p>
+                            <div class="resource-meta">
+                                <span><i class="far fa-calendar"></i> May 10, 2023</span>
+                                <span><i class="far fa-clock"></i> 18 min read</span>
+                            </div>
+                            <a href="#" class="btn btn-primary">
+                                <i class="fas fa-download me-2"></i>Download
+                                <span class="btn-shine"></span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="text-center mt-4">
+                <a href="#" class="btn btn-outline-light">View All White Papers</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Case Studies Section -->
+    <section id="casestudies" class="case-studies py-5">
+        <div class="container">
+            <div class="row text-center mb-5">
+                <div class="col-12">
+                    <div class="section-header" data-aos="fade-up">
+                        <span class="section-badge">Success Stories</span>
+                        <h2 class="section-title">Case Studies</h2>
+                        <p class="section-subtitle">Real-world examples of our solutions in action</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row g-4">
+                <div class="col-lg-6" data-aos="fade-up" data-aos-delay="100">
+                    <div class="case-study-card">
+                        <div class="row g-0">
+                            <div class="col-md-5">
+                                <div class="case-study-image">
+                                    <img src="https://images.unsplash.com/photo-1573164713988-8665fc963095?w=300&h=400&fit=crop&crop=center" alt="Case Study" class="img-fluid h-100 object-fit-cover">
+                                </div>
+                            </div>
+                            <div class="col-md-7">
+                                <div class="case-study-content">
+                                    <div class="case-study-badge">Telecom Operator</div>
+                                    <h4>Global Telecom Reduces Network Downtime by 75%</h4>
+                                    <p>How a leading international telecom operator implemented our network management solution to dramatically improve service reliability.</p>
+                                    <div class="case-study-results">
+                                        <div class="result-item">
+                                            <span class="result-value">75%</span>
+                                            <span class="result-label">Reduced Downtime</span>
+                                        </div>
+                                        <div class="result-item">
+                                            <span class="result-value">$4.2M</span>
+                                            <span class="result-label">Annual Savings</span>
+                                        </div>
+                                    </div>
+                                    <a href="#" class="btn btn-outline-primary">Read Case Study</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6" data-aos="fade-up" data-aos-delay="200">
+                    <div class="case-study-card">
+                        <div class="row g-0">
+                            <div class="col-md-5">
+                                <div class="case-study-image">
+                                    <img src="https://images.unsplash.com/photo-1573164713988-8665fc963095?w=300&h=400&fit=crop&crop=center" alt="Case Study" class="img-fluid h-100 object-fit-cover">
+                                </div>
+                            </div>
+                            <div class="col-md-7">
+                                <div class="case-study-content">
+                                    <div class="case-study-badge">Enterprise</div>
+                                    <h4>Financial Institution Enhances Network Security</h4>
+                                    <p>How a major financial services company strengthened their telecom infrastructure security using our advanced monitoring solutions.</p>
+                                    <div class="case-study-results">
+                                        <div class="result-item">
+                                            <span class="result-value">98%</span>
+                                            <span class="result-label">Threat Detection</span>
+                                        </div>
+                                        <div class="result-item">
+                                            <span class="result-value">60%</span>
+                                            <span class="result-label">Faster Response</span>
+                                        </div>
+                                    </div>
+                                    <a href="#" class="btn btn-outline-primary">Read Case Study</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="text-center mt-4">
+                <a href="#" class="btn btn-outline-primary">View All Case Studies</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Webinars Section -->
+    <section id="webinars" class="webinars py-5 bg-dark-gradient">
+        <div class="container">
+            <div class="row text-center mb-5">
+                <div class="col-12">
+                    <div class="section-header" data-aos="fade-up">
+                        <span class="section-badge">Video Resources</span>
+                        <h2 class="section-title">Webinars & Videos</h2>
+                        <p class="section-subtitle">Watch our latest webinars and product demonstrations</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row g-4">
+                <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="100">
+                    <div class="webinar-card">
+                        <div class="webinar-thumbnail">
+                            <img src="https://images.unsplash.com/photo-1611162617213-7d7a39e9b1d7?w=400&h=225&fit=crop&crop=center" alt="Webinar Thumbnail" class="img-fluid">
+                            <div class="play-button">
+                                <i class="fas fa-play"></i>
+                            </div>
+                            <div class="webinar-duration">45:12</div>
+                        </div>
+                        <div class="webinar-content">
+                            <div class="webinar-type">Webinar</div>
+                            <h4>Automating Network Operations with AI</h4>
+                            <p>Learn how artificial intelligence is revolutionizing telecom network operations and maintenance.</p>
+                            <div class="webinar-meta">
+                                <span><i class="far fa-calendar"></i> Feb 18, 2023</span>
+                                <span><i class="far fa-user"></i> John Smith, CTO</span>
+                            </div>
+                            <a href="#" class="btn btn-primary">
+                                <i class="fas fa-play me-2"></i>Watch Now
+                                <span class="btn-shine"></span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="200">
+                    <div class="webinar-card">
+                        <div class="webinar-thumbnail">
+                            <img src="https://images.unsplash.com/photo-1611162617213-7d7a39e9b1d7?w=400&h=225&fit=crop&crop=center" alt="Webinar Thumbnail" class="img-fluid">
+                            <div class="play-button">
+                                <i class="fas fa-play"></i>
+                            </div>
+                            <div class="webinar-duration">38:45</div>
+                        </div>
+                        <div class="webinar-content">
+                            <div class="webinar-type">Product Demo</div>
+                            <h4>NetOps Platform: Advanced Features Tour</h4>
+                            <p>A comprehensive walkthrough of our flagship network operations platform and its key capabilities.</p>
+                            <div class="webinar-meta">
+                                <span><i class="far fa-calendar"></i> Apr 05, 2023</span>
+                                <span><i class="far fa-user"></i> Sarah Johnson, Product Manager</span>
+                            </div>
+                            <a href="#" class="btn btn-primary">
+                                <i class="fas fa-play me-2"></i>Watch Now
+                                <span class="btn-shine"></span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="300">
+                    <div class="webinar-card">
+                        <div class="webinar-thumbnail">
+                            <img src="https://images.unsplash.com/photo-1611162617213-7d7a39e9b1d7?w=400&h=225&fit=crop&crop=center" alt="Webinar Thumbnail" class="img-fluid">
+                            <div class="play-button">
+                                <i class="fas fa-play"></i>
+                            </div>
+                            <div class="webinar-duration">52:30</div>
+                        </div>
+                        <div class="webinar-content">
+                            <div class="webinar-type">Panel Discussion</div>
+                            <h4>The Future of Telecom: Industry Experts Roundtable</h4>
+                            <p>Leading telecom experts discuss emerging trends and the future direction of the industry.</p>
+                            <div class="webinar-meta">
+                                <span><i class="far fa-calendar"></i> Jun 22, 2023</span>
+                                <span><i class="far fa-user"></i> Multiple Speakers</span>
+                            </div>
+                            <a href="#" class="btn btn-primary">
+                                <i class="fas fa-play me-2"></i>Watch Now
+                                <span class="btn-shine"></span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="text-center mt-4">
+                <a href="#" class="btn btn-outline-light">View All Webinars</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Documentation Section -->
+    <section id="documentation" class="documentation py-5">
+        <div class="container">
+            <div class="row text-center mb-5">
+                <div class="col-12">
+                    <div class="section-header" data-aos="fade-up">
+                        <span class="section-badge">Technical Resources</span>
+                        <h2 class="section-title">Product Documentation</h2>
+                        <p class="section-subtitle">Comprehensive guides and technical specifications</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row g-4">
+                <div class="col-lg-6" data-aos="fade-up">
+                    <div class="documentation-search">
+                        <h4>Find Documentation</h4>
+                        <p>Search our technical documentation library for guides, API references, and more.</p>
+                        <div class="search-form">
+                            <div class="input-group">
+                                <input type="text" class="form-control" placeholder="Search documentation...">
+                                <button class="btn btn-primary" type="button">
+                                    <i class="fas fa-search"></i>
+                                </button>
+                            </div>
+                        </div>
+                        <div class="popular-searches mt-3">
+                            <span>Popular searches:</span>
+                            <a href="#">API Reference</a>
+                            <a href="#">Installation Guide</a>
+                            <a href="#">Troubleshooting</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6" data-aos="fade-up" data-aos-delay="100">
+                    <div class="documentation-categories">
+                        <h4>Documentation Categories</h4>
+                        <div class="row g-3">
+                            <div class="col-md-6">
+                                <a href="#" class="doc-category-link">
+                                    <i class="fas fa-book"></i>
+                                    <span>User Guides</span>
+                                </a>
+                            </div>
+                            <div class="col-md-6">
+                                <a href="#" class="doc-category-link">
+                                    <i class="fas fa-code"></i>
+                                    <span>API Documentation</span>
+                                </a>
+                            </div>
+                            <div class="col-md-6">
+                                <a href="#" class="doc-category-link">
+                                    <i class="fas fa-server"></i>
+                                    <span>Installation & Deployment</span>
+                                </a>
+                            </div>
+                            <div class="col-md-6">
+                                <a href="#" class="doc-category-link">
+                                    <i class="fas fa-cogs"></i>
+                                    <span>Configuration Guides</span>
+                                </a>
+                            </div>
+                            <div class="col-md-6">
+                                <a href="#" class="doc-category-link">
+                                    <i class="fas fa-wrench"></i>
+                                    <span>Troubleshooting</span>
+                                </a>
+                            </div>
+                            <div class="col-md-6">
+                                <a href="#" class="doc-category-link">
+                                    <i class="fas fa-file-alt"></i>
+                                    <span>Release Notes</span>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row mt-5">
+                <div class="col-12" data-aos="fade-up">
+                    <div class="documentation-featured">
+                        <h4 class="mb-4">Featured Documentation</h4>
+                        <div class="table-responsive">
+                            <table class="table table-hover">
+                                <thead>
+                                    <tr>
+                                        <th>Document</th>
+                                        <th>Category</th>
+                                        <th>Last Updated</th>
+                                        <th>Action</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>NetOps Platform User Guide</td>
+                                        <td><span class="badge bg-primary">User Guide</span></td>
+                                        <td>July 15, 2023</td>
+                                        <td><a href="#" class="btn btn-sm btn-outline-primary">View</a></td>
+                                    </tr>
+                                    <tr>
+                                        <td>RESTful API Reference</td>
+                                        <td><span class="badge bg-info">API</span></td>
+                                        <td>August 3, 2023</td>
+                                        <td><a href="#" class="btn btn-sm btn-outline-primary">View</a></td>
+                                    </tr>
+                                    <tr>
+                                        <td>Installation & Deployment Guide</td>
+                                        <td><span class="badge bg-success">Installation</span></td>
+                                        <td>June 28, 2023</td>
+                                        <td><a href="#" class="btn btn-sm btn-outline-primary">View</a></td>
+                                    </tr>
+                                    <tr>
+                                        <td>Security Best Practices</td>
+                                        <td><span class="badge bg-warning">Security</span></td>
+                                        <td>July 22, 2023</td>
+                                        <td><a href="#" class="btn btn-sm btn-outline-primary">View</a></td>
+                                    </tr>
+                                    <tr>
+                                        <td>Troubleshooting Common Issues</td>
+                                        <td><span class="badge bg-danger">Troubleshooting</span></td>
+                                        <td>August 10, 2023</td>
+                                        <td><a href="#" class="btn btn-sm btn-outline-primary">View</a></td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Training Section -->
+    <section id="training" class="training py-5 bg-dark-gradient">
+        <div class="container">
+            <div class="row text-center mb-5">
+                <div class="col-12">
+                    <div class="section-header" data-aos="fade-up">
+                        <span class="section-badge">Learning Resources</span>
+                        <h2 class="section-title">Training & Certification</h2>
+                        <p class="section-subtitle">Build expertise with our comprehensive training programs</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row g-4">
+                <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="100">
+                    <div class="training-card">
+                        <div class="training-level">Beginner</div>
+                        <h4>NetOps Platform Fundamentals</h4>
+                        <p>Introduction to our network operations platform, covering basic concepts and operations.</p>
+                        <ul class="training-details">
+                            <li><i class="fas fa-clock"></i> 8 Hours</li>
+                            <li><i class="fas fa-video"></i> 12 Modules</li>
+                            <li><i class="fas fa-certificate"></i> Certificate Included</li>
+                        </ul>
+                        <a href="#" class="btn btn-primary w-100">
+                            <i class="fas fa-graduation-cap me-2"></i>Enroll Now
+                            <span class="btn-shine"></span>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="200">
+                    <div class="training-card">
+                        <div class="training-level">Intermediate</div>
+                        <h4>Advanced Network Monitoring</h4>
+                        <p>Deep dive into advanced monitoring techniques, alerts, and performance optimization.</p>
+                        <ul class="training-details">
+                            <li><i class="fas fa-clock"></i> 12 Hours</li>
+                            <li><i class="fas fa-video"></i> 15 Modules</li>
+                            <li><i class="fas fa-certificate"></i> Certificate Included</li>
+                        </ul>
+                        <a href="#" class="btn btn-primary w-100">
+                            <i class="fas fa-graduation-cap me-2"></i>Enroll Now
+                            <span class="btn-shine"></span>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="300">
+                    <div class="training-card">
+                        <div class="training-level">Advanced</div>
+                        <h4>System Integration & API Development</h4>
+                        <p>Learn to integrate our platform with other systems and develop custom solutions using our APIs.</p>
+                        <ul class="training-details">
+                            <li><i class="fas fa-clock"></i> 16 Hours</li>
+                            <li><i class="fas fa-video"></i> 18 Modules</li>
+                            <li><i class="fas fa-certificate"></i> Certificate Included</li>
+                        </ul>
+                        <a href="#" class="btn btn-primary w-100">
+                            <i class="fas fa-graduation-cap me-2"></i>Enroll Now
+                            <span class="btn-shine"></span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row mt-5">
+                <div class="col-12" data-aos="fade-up">
+                    <div class="certification-path">
+                        <h4 class="text-center mb-4">Certification Path</h4>
+                        <div class="certification-timeline">
+                            <div class="timeline-item">
+                                <div class="timeline-badge">
+                                    <i class="fas fa-user"></i>
+                                </div>
+                                <div class="timeline-content">
+                                    <h5>Certified Associate</h5>
+                                    <p>Entry-level certification covering fundamental concepts and basic operations.</p>
+                                </div>
+                            </div>
+                            <div class="timeline-item">
+                                <div class="timeline-badge">
+                                    <i class="fas fa-user-cog"></i>
+                                </div>
+                                <div class="timeline-content">
+                                    <h5>Certified Professional</h5>
+                                    <p>Intermediate certification for those with operational experience using our platform.</p>
+                                </div>
+                            </div>
+                            <div class="timeline-item">
+                                <div class="timeline-badge">
+                                    <i class="fas fa-user-tie"></i>
+                                </div>
+                                <div class="timeline-content">
+                                    <h5>Certified Expert</h5>
+                                    <p>Advanced certification demonstrating mastery of complex implementations and integrations.</p>
+                                </div>
+                            </div>
+                            <div class="timeline-item">
+                                <div class="timeline-badge">
+                                    <i class="fas fa-user-shield"></i>
+                                </div>
+                                <div class="timeline-content">
+                                    <h5>Certified Architect</h5>
+                                    <p>Highest level certification for solution architects and technical leaders.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Blog Section -->
+    <section id="blog" class="blog py-5">
+        <div class="container">
+            <div class="row text-center mb-5">
+                <div class="col-12">
+                    <div class="section-header" data-aos="fade-up">
+                        <span class="section-badge">Latest Insights</span>
+                        <h2 class="section-title">Blog & Articles</h2>
+                        <p class="section-subtitle">Industry insights and thought leadership from our experts</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row g-4">
+                <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="100">
+                    <div class="blog-card">
+                        <div class="blog-image">
+                            <img src="https://images.unsplash.com/photo-1519389950473-47ba0277781c?w=400&h=250&fit=crop&crop=center" alt="Blog Image" class="img-fluid">
+                            <div class="blog-category">Industry Trends</div>
+                        </div>
+                        <div class="blog-content">
+                            <div class="blog-meta">
+                                <span><i class="far fa-calendar"></i> Aug 15, 2023</span>
+                                <span><i class="far fa-user"></i> John Smith</span>
+                            </div>
+                            <h4>The Impact of AI on Telecom Network Management</h4>
+                            <p>Exploring how artificial intelligence is transforming network operations and maintenance in the telecom industry.</p>
+                            <a href="#" class="read-more">Read Article <i class="fas fa-arrow-right"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="200">
+                    <div class="blog-card">
+                        <div class="blog-image">
+                            <img src="https://images.unsplash.com/photo-1519389950473-47ba0277781c?w=400&h=250&fit=crop&crop=center" alt="Blog Image" class="img-fluid">
+                            <div class="blog-category">Best Practices</div>
+                        </div>
+                        <div class="blog-content">
+                            <div class="blog-meta">
+                                <span><i class="far fa-calendar"></i> Jul 28, 2023</span>
+                                <span><i class="far fa-user"></i> Sarah Johnson</span>
+                            </div>
+                            <h4>5 Essential Strategies for Network Security in 2023</h4>
+                            <p>Key approaches to strengthen your telecom network security posture against evolving threats.</p>
+                            <a href="#" class="read-more">Read Article <i class="fas fa-arrow-right"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="300">
+                    <div class="blog-card">
+                        <div class="blog-image">
+                            <img src="https://images.unsplash.com/photo-1519389950473-47ba0277781c?w=400&h=250&fit=crop&crop=center" alt="Blog Image" class="img-fluid">
+                            <div class="blog-category">Technology</div>
+                        </div>
+                        <div class="blog-content">
+                            <div class="blog-meta">
+                                <span><i class="far fa-calendar"></i> Aug 05, 2023</span>
+                                <span><i class="far fa-user"></i> Robert Chen</span>
+                            </div>
+                            <h4>The Evolution of OSS/BSS in the Cloud Era</h4>
+                            <p>How cloud technologies are reshaping operational and business support systems for telecom operators.</p>
+                            <a href="#" class="read-more">Read Article <i class="fas fa-arrow-right"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="text-center mt-4">
+                <a href="#" class="btn btn-outline-primary">View All Articles</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Resource Request Section -->
+    <section class="resource-request py-5 bg-dark-gradient">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-lg-10">
+                    <div class="request-card" data-aos="fade-up">
+                        <div class="row">
+                            <div class="col-lg-6">
+                                <div class="request-content">
+                                    <span class="section-badge">Need Help?</span>
+                                    <h2 class="section-title">Request Custom Resources</h2>
+                                    <p>Can't find what you're looking for? Our team can create custom resources tailored to your specific needs.</p>
+                                    <ul class="request-features">
+                                        <li><i class="fas fa-check-circle"></i> Custom training programs</li>
+                                        <li><i class="fas fa-check-circle"></i> Specialized documentation</li>
+                                        <li><i class="fas fa-check-circle"></i> Personalized webinars</li>
+                                        <li><i class="fas fa-check-circle"></i> Solution-specific guides</li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="col-lg-6">
+                                <div class="request-form">
+                                    <form>
+                                        <div class="mb-3">
+                                            <label for="name" class="form-label">Your Name</label>
+                                            <input type="text" class="form-control" id="name" required>
+                                        </div>
+                                        <div class="mb-3">
+                                            <label for="email" class="form-label">Email Address</label>
+                                            <input type="email" class="form-control" id="email" required>
+                                        </div>
+                                        <div class="mb-3">
+                                            <label for="company" class="form-label">Company</label>
+                                            <input type="text" class="form-control" id="company" required>
+                                        </div>
+                                        <div class="mb-3">
+                                            <label for="resourceType" class="form-label">Resource Type</label>
+                                            <select class="form-select" id="resourceType" required>
+                                                <option value="" selected disabled>Select Resource Type</option>
+                                                <option value="training">Training</option>
+                                                <option value="documentation">Documentation</option>
+                                                <option value="webinar">Webinar</option>
+                                                <option value="casestudy">Case Study</option>
+                                                <option value="other">Other</option>
+                                            </select>
+                                        </div>
+                                        <div class="mb-3">
+                                            <label for="message" class="form-label">Your Request</label>
+                                            <textarea class="form-control" id="message" rows="4" required></textarea>
+                                        </div>
+                                        <button type="submit" class="btn btn-primary w-100">
+                                            <i class="fas fa-paper-plane me-2"></i>Submit Request
+                                            <span class="btn-shine"></span>
+                                        </button>
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer py-5">
+        <div class="container">
+            <div class="row g-4">
+                <div class="col-lg-4">
+                    <div class="footer-brand">
+                        <img src="https://images.unsplash.com/photo-1560472354-b33ff0c44a43?w=150&h=60&fit=crop&crop=center" alt="NMSWorks" class="footer-logo">
+                        <h4 class="mt-3">NMSWorks Software</h4>
+                        <p>Leading provider of telecom software solutions, serving operators worldwide with innovative OSS/BSS platforms and network management systems.</p>
+                        <div class="social-links">
+                            <a href="#" class="social-link"><i class="fab fa-linkedin"></i></a>
+                            <a href="#" class="social-link"><i class="fab fa-twitter"></i></a>
+                            <a href="#" class="social-link"><i class="fab fa-facebook"></i></a>
+                            <a href="#" class="social-link"><i class="fab fa-youtube"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-2 col-md-4">
+                    <h5 class="footer-title">Company</h5>
+                    <ul class="footer-links">
+                        <li><a href="about/people.html">People</a></li>
+                        <li><a href="about/management.html">Management</a></li>
+                        <li><a href="about/news-events.html">News & Events</a></li>
+                        <li><a href="about/life-at-nmsworks.html">Life at NMSWorks</a></li>
+                        <li><a href="about/career.html">Career</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-2 col-md-4">
+                    <h5 class="footer-title">Solutions</h5>
+                    <ul class="footer-links">
+                        <li><a href="portfolio/products.html">Products</a></li>
+                        <li><a href="portfolio/solutions.html">Solutions</a></li>
+                        <li><a href="innovation.html">Innovation</a></li>
+                        <li><a href="partners.html">Partners</a></li>
+                        <li><a href="resources.html">Resources</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-4 col-md-4">
+                    <h5 class="footer-title">Contact</h5>
+                    <ul class="footer-contact">
+                        <li>
+                            <i class="fas fa-map-marker-alt"></i>
+                            <span>123 Tech Park, Innovation Street, Chennai, India 600001</span>
+                        </li>
+                        <li>
+                            <i class="fas fa-phone"></i>
+                            <span>+91 44 1234 5678</span>
+                        </li>
+                        <li>
+                            <i class="fas fa-envelope"></i>
+                            <span>info@nmsworks.com</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <div class="row">
+                    <div class="col-md-6">
+                        <p class="copyright">© 2023 NMSWorks Software. All rights reserved.</p>
+                    </div>
+                    <div class="col-md-6 text-md-end">
+                        <ul class="footer-bottom-links">
+                            <li><a href="#">Privacy Policy</a></li>
+                            <li><a href="#">Terms of Service</a></li>
+                            <li><a href="#">Sitemap</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Back to Top Button -->
+    <button id="backToTop" class="back-to-top">
+        <i class="fas fa-arrow-up"></i>
+    </button>
+
+    <!-- Scripts -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="./src/main.js"></script>
+</body>
+</html>

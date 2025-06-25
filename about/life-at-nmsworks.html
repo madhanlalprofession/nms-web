@@ -1,0 +1,935 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Life at NMSWorks - NMSWorks</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Poppins:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link href="../src/styles.css" rel="stylesheet">
+</head>
+<body class="dark-theme">
+    <!-- Preloader -->
+    <div id="preloader">
+        <div class="preloader-content">
+            <div class="spinner"></div>
+            <h3>Loading NMSWorks</h3>
+        </div>
+    </div>
+
+    <!-- Header -->
+    <nav class="navbar navbar-expand-lg fixed-top" id="mainNav">
+        <div class="container">
+            <a class="navbar-brand" href="../index.html">
+                <div class="logo-container">
+                    <img src="https://images.unsplash.com/photo-1560472354-b33ff0c44a43?w=150&h=60&fit=crop&crop=center" alt="NMSWorks" class="logo">
+                    <span class="logo-text">NMSWorks</span>
+                </div>
+            </a>
+            
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="hamburger-line"></span>
+                <span class="hamburger-line"></span>
+                <span class="hamburger-line"></span>
+            </button>
+            
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">
+                            <i class="fas fa-briefcase me-2"></i>Portfolio
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="../portfolio/products.html"><i class="fas fa-cube me-2"></i>Products</a></li>
+                            <li><a class="dropdown-item" href="../portfolio/solutions.html"><i class="fas fa-lightbulb me-2"></i>Solutions</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="../innovation.html">
+                            <i class="fas fa-rocket me-2"></i>Innovation
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="../partners.html">
+                            <i class="fas fa-handshake me-2"></i>Partners
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="../resources.html">
+                            <i class="fas fa-book me-2"></i>Resources
+                        </a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle active" href="#" role="button" data-bs-toggle="dropdown">
+                            <i class="fas fa-users me-2"></i>About Us
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="people.html"><i class="fas fa-user-friends me-2"></i>People</a></li>
+                            <li><a class="dropdown-item" href="management.html"><i class="fas fa-user-tie me-2"></i>Management</a></li>
+                            <li><a class="dropdown-item" href="news-events.html"><i class="fas fa-newspaper me-2"></i>News & Events</a></li>
+                            <li><a class="dropdown-item active" href="life-at-nmsworks.html"><i class="fas fa-heart me-2"></i>Life at NMSWorks</a></li>
+                            <li><a class="dropdown-item" href="career.html"><i class="fas fa-briefcase me-2"></i>Career</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link contact-btn" href="../contact.html">
+                            <i class="fas fa-envelope me-2"></i>Contact
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Page Hero Section -->
+    <section class="page-hero">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-6">
+                    <div class="hero-content" data-aos="fade-right">
+                        <div class="hero-badge">
+                            <i class="fas fa-heart"></i>
+                            <span>Our Culture</span>
+                        </div>
+                        <h1 class="hero-title">Life at <span class="gradient-text">NMSWorks</span></h1>
+                        <p class="hero-subtitle">Discover our vibrant workplace culture, where innovation meets collaboration and work-life balance.</p>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <div class="hero-image" data-aos="fade-left">
+                        <img src="https://images.unsplash.com/photo-1522071820081-009f0129c71c?w=600&h=400&fit=crop&crop=center" alt="Life at NMSWorks" class="img-fluid rounded-4 shadow-lg">
+                        <div class="image-overlay"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Our Values Section -->
+    <section class="values-section py-5">
+        <div class="container">
+            <div class="row text-center mb-5">
+                <div class="col-12">
+                    <div class="section-header" data-aos="fade-up">
+                        <span class="section-badge">Our Foundation</span>
+                        <h2 class="section-title">Core Values</h2>
+                        <p class="section-subtitle">The principles that guide everything we do</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row g-4">
+                <div class="col-lg-3 col-md-6" data-aos="fade-up">
+                    <div class="value-card">
+                        <div class="value-icon">
+                            <i class="fas fa-lightbulb"></i>
+                        </div>
+                        <h4 class="value-title">Innovation</h4>
+                        <p class="value-description">We constantly push boundaries and explore new ideas to create cutting-edge solutions for the telecom industry.</p>
+                    </div>
+                </div>
+
+                <div class="col-lg-3 col-md-6" data-aos="fade-up" data-aos-delay="100">
+                    <div class="value-card">
+                        <div class="value-icon">
+                            <i class="fas fa-users"></i>
+                        </div>
+                        <h4 class="value-title">Collaboration</h4>
+                        <p class="value-description">We believe in the power of teamwork and foster an environment where diverse perspectives come together.</p>
+                    </div>
+                </div>
+
+                <div class="col-lg-3 col-md-6" data-aos="fade-up" data-aos-delay="200">
+                    <div class="value-card">
+                        <div class="value-icon">
+                            <i class="fas fa-shield-alt"></i>
+                        </div>
+                        <h4 class="value-title">Integrity</h4>
+                        <p class="value-description">We uphold the highest ethical standards in all our interactions with colleagues, clients, and partners.</p>
+                    </div>
+                </div>
+
+                <div class="col-lg-3 col-md-6" data-aos="fade-up" data-aos-delay="300">
+                    <div class="value-card">
+                        <div class="value-icon">
+                            <i class="fas fa-chart-line"></i>
+                        </div>
+                        <h4 class="value-title">Excellence</h4>
+                        <p class="value-description">We strive for excellence in everything we do, from product development to customer service.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Work Environment Section -->
+    <section class="work-environment py-5 bg-dark-gradient">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-6" data-aos="fade-right">
+                    <div class="section-header">
+                        <span class="section-badge">Where We Work</span>
+                        <h2 class="section-title">Modern Workspace</h2>
+                        <p>Our offices are designed to inspire creativity, foster collaboration, and enhance productivity. We believe that a well-designed workspace contributes significantly to employee satisfaction and innovation.</p>
+                    </div>
+                    
+                    <div class="workspace-features mt-4">
+                        <div class="feature-item">
+                            <div class="feature-icon">
+                                <i class="fas fa-coffee"></i>
+                            </div>
+                            <div class="feature-content">
+                                <h5>Collaborative Zones</h5>
+                                <p>Open spaces designed for team discussions, brainstorming sessions, and collaborative work.</p>
+                            </div>
+                        </div>
+                        
+                        <div class="feature-item">
+                            <div class="feature-icon">
+                                <i class="fas fa-laptop-code"></i>
+                            </div>
+                            <div class="feature-content">
+                                <h5>Tech-Enabled Facilities</h5>
+                                <p>State-of-the-art technology infrastructure supporting our development and innovation efforts.</p>
+                            </div>
+                        </div>
+                        
+                        <div class="feature-item">
+                            <div class="feature-icon">
+                                <i class="fas fa-couch"></i>
+                            </div>
+                            <div class="feature-content">
+                                <h5>Relaxation Areas</h5>
+                                <p>Dedicated spaces for breaks, casual conversations, and recharging throughout the workday.</p>
+                            </div>
+                        </div>
+                        
+                        <div class="feature-item">
+                            <div class="feature-icon">
+                                <i class="fas fa-seedling"></i>
+                            </div>
+                            <div class="feature-content">
+                                <h5>Green Initiatives</h5>
+                                <p>Environmentally conscious office design with energy-efficient systems and sustainable practices.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="col-lg-6" data-aos="fade-left">
+                    <div class="workspace-gallery">
+                        <div class="row g-3">
+                            <div class="col-6">
+                                <img src="https://images.unsplash.com/photo-1497366754035-f200968a6e72?w=400&h=300&fit=crop&crop=center" alt="Collaborative Space" class="img-fluid rounded-4 shadow-lg">
+                            </div>
+                            <div class="col-6">
+                                <img src="https://images.unsplash.com/photo-1497215842964-222b430dc094?w=400&h=300&fit=crop&crop=center" alt="Office Space" class="img-fluid rounded-4 shadow-lg">
+                            </div>
+                            <div class="col-6 mt-3">
+                                <img src="https://images.unsplash.com/photo-1572025442646-866d16c84a54?w=400&h=300&fit=crop&crop=center" alt="Meeting Room" class="img-fluid rounded-4 shadow-lg">
+                            </div>
+                            <div class="col-6 mt-3">
+                                <img src="https://images.unsplash.com/photo-1519389950473-47ba0277781c?w=400&h=300&fit=crop&crop=center" alt="Team Working" class="img-fluid rounded-4 shadow-lg">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Employee Benefits Section -->
+    <section class="benefits-section py-5">
+        <div class="container">
+            <div class="row text-center mb-5">
+                <div class="col-12">
+                    <div class="section-header" data-aos="fade-up">
+                        <span class="section-badge">Taking Care of Our Team</span>
+                        <h2 class="section-title">Employee Benefits</h2>
+                        <p class="section-subtitle">We offer a comprehensive benefits package designed to support our employees' well-being</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row g-4">
+                <div class="col-lg-4 col-md-6" data-aos="fade-up">
+                    <div class="benefit-card">
+                        <div class="benefit-icon">
+                            <i class="fas fa-heartbeat"></i>
+                        </div>
+                        <h4 class="benefit-title">Health & Wellness</h4>
+                        <ul class="benefit-list">
+                            <li>Comprehensive health insurance</li>
+                            <li>Dental and vision coverage</li>
+                            <li>Mental health support</li>
+                            <li>Wellness programs and fitness subsidies</li>
+                            <li>Annual health check-ups</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="100">
+                    <div class="benefit-card">
+                        <div class="benefit-icon">
+                            <i class="fas fa-graduation-cap"></i>
+                        </div>
+                        <h4 class="benefit-title">Learning & Development</h4>
+                        <ul class="benefit-list">
+                            <li>Professional development budget</li>
+                            <li>Technical certification programs</li>
+                            <li>Leadership training</li>
+                            <li>Conference attendance opportunities</li>
+                            <li>Internal knowledge sharing sessions</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="200">
+                    <div class="benefit-card">
+                        <div class="benefit-icon">
+                            <i class="fas fa-balance-scale"></i>
+                        </div>
+                        <h4 class="benefit-title">Work-Life Balance</h4>
+                        <ul class="benefit-list">
+                            <li>Flexible working hours</li>
+                            <li>Remote work options</li>
+                            <li>Generous paid time off</li>
+                            <li>Parental leave</li>
+                            <li>Sabbatical opportunities</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="300">
+                    <div class="benefit-card">
+                        <div class="benefit-icon">
+                            <i class="fas fa-coins"></i>
+                        </div>
+                        <h4 class="benefit-title">Financial Benefits</h4>
+                        <ul class="benefit-list">
+                            <li>Competitive salary packages</li>
+                            <li>Performance bonuses</li>
+                            <li>Retirement plans with company matching</li>
+                            <li>Stock options</li>
+                            <li>Financial planning assistance</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="400">
+                    <div class="benefit-card">
+                        <div class="benefit-icon">
+                            <i class="fas fa-gift"></i>
+                        </div>
+                        <h4 class="benefit-title">Perks & Recognition</h4>
+                        <ul class="benefit-list">
+                            <li>Employee recognition programs</li>
+                            <li>Team celebrations and events</li>
+                            <li>Anniversary gifts</li>
+                            <li>Referral bonuses</li>
+                            <li>Company retreats</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="500">
+                    <div class="benefit-card">
+                        <div class="benefit-icon">
+                            <i class="fas fa-hands-helping"></i>
+                        </div>
+                        <h4 class="benefit-title">Community & CSR</h4>
+                        <ul class="benefit-list">
+                            <li>Volunteer time off</li>
+                            <li>Charitable donation matching</li>
+                            <li>Community service opportunities</li>
+                            <li>Environmental initiatives</li>
+                            <li>Social impact projects</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Team Activities Section -->
+    <section class="team-activities py-5 bg-dark-gradient">
+        <div class="container">
+            <div class="row text-center mb-5">
+                <div class="col-12">
+                    <div class="section-header" data-aos="fade-up">
+                        <span class="section-badge">Building Connections</span>
+                        <h2 class="section-title">Team Activities & Events</h2>
+                        <p class="section-subtitle">We believe in fostering strong team bonds through various activities and events</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row g-4">
+                <div class="col-lg-6" data-aos="fade-up">
+                    <div class="activity-card">
+                        <div class="activity-image">
+                            <img src="https://images.unsplash.com/photo-1517048676732-d65bc937f952?w=600&h=400&fit=crop&crop=center" alt="Team Building" class="img-fluid rounded-4">
+                            <div class="image-overlay"></div>
+                        </div>
+                        <div class="activity-content">
+                            <h4 class="activity-title">Quarterly Team Building</h4>
+                            <p class="activity-description">Our quarterly team building events range from outdoor adventures to creative workshops, designed to strengthen collaboration and communication across departments.</p>
+                            <div class="activity-gallery">
+                                <div class="row g-2 mt-3">
+                                    <div class="col-4">
+                                        <img src="https://images.unsplash.com/photo-1527525443983-6e60c75fff46?w=150&h=100&fit=crop&crop=center" alt="Team Activity 1" class="img-fluid rounded-3">
+                                    </div>
+                                    <div class="col-4">
+                                        <img src="https://images.unsplash.com/photo-1542744173-8e7e53415bb0?w=150&h=100&fit=crop&crop=center" alt="Team Activity 2" class="img-fluid rounded-3">
+                                    </div>
+                                    <div class="col-4">
+                                        <img src="https://images.unsplash.com/photo-1522071820081-009f0129c71c?w=150&h=100&fit=crop&crop=center" alt="Team Activity 3" class="img-fluid rounded-3">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-6" data-aos="fade-up" data-aos-delay="100">
+                    <div class="activity-card">
+                        <div class="activity-image">
+                            <img src="https://images.unsplash.com/photo-1528605248644-14dd04022da1?w=600&h=400&fit=crop&crop=center" alt="Celebrations" class="img-fluid rounded-4">
+                            <div class="image-overlay"></div>
+                        </div>
+                        <div class="activity-content">
+                            <h4 class="activity-title">Celebrations & Milestones</h4>
+                            <p class="activity-description">We celebrate achievements, birthdays, work anniversaries, and company milestones together, recognizing the contributions of every team member to our collective success.</p>
+                            <div class="activity-gallery">
+                                <div class="row g-2 mt-3">
+                                    <div class="col-4">
+                                        <img src="https://images.unsplash.com/photo-1492684223066-81342ee5ff30?w=150&h=100&fit=crop&crop=center" alt="Celebration 1" class="img-fluid rounded-3">
+                                    </div>
+                                    <div class="col-4">
+                                        <img src="https://images.unsplash.com/photo-1519671482749-fd09be7ccebf?w=150&h=100&fit=crop&crop=center" alt="Celebration 2" class="img-fluid rounded-3">
+                                    </div>
+                                    <div class="col-4">
+                                        <img src="https://images.unsplash.com/photo-1557804506-669a67965ba0?w=150&h=100&fit=crop&crop=center" alt="Celebration 3" class="img-fluid rounded-3">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-6" data-aos="fade-up" data-aos-delay="200">
+                    <div class="activity-card">
+                        <div class="activity-image">
+                            <img src="https://images.unsplash.com/photo-1587825140708-dfaf72ae4b04?w=600&h=400&fit=crop&crop=center" alt="Hackathons" class="img-fluid rounded-4">
+                            <div class="image-overlay"></div>
+                        </div>
+                        <div class="activity-content">
+                            <h4 class="activity-title">Innovation Hackathons</h4>
+                            <p class="activity-description">Our internal hackathons provide a platform for employees to explore creative ideas, develop prototypes, and showcase their technical skills in a collaborative and fun environment.</p>
+                            <div class="activity-gallery">
+                                <div class="row g-2 mt-3">
+                                    <div class="col-4">
+                                        <img src="https://images.unsplash.com/photo-1504384308090-c894fdcc538d?w=150&h=100&fit=crop&crop=center" alt="Hackathon 1" class="img-fluid rounded-3">
+                                    </div>
+                                    <div class="col-4">
+                                        <img src="https://images.unsplash.com/photo-1531482615713-2afd69097998?w=150&h=100&fit=crop&crop=center" alt="Hackathon 2" class="img-fluid rounded-3">
+                                    </div>
+                                    <div class="col-4">
+                                        <img src="https://images.unsplash.com/photo-1581092921461-7d65ca45ec1e?w=150&h=100&fit=crop&crop=center" alt="Hackathon 3" class="img-fluid rounded-3">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-6" data-aos="fade-up" data-aos-delay="300">
+                    <div class="activity-card">
+                        <div class="activity-image">
+                            <img src="https://images.unsplash.com/photo-1559223607-a43c990c692c?w=600&h=400&fit=crop&crop=center" alt="Community Service" class="img-fluid rounded-4">
+                            <div class="image-overlay"></div>
+                        </div>
+                        <div class="activity-content">
+                            <h4 class="activity-title">Community Service</h4>
+                            <p class="activity-description">We regularly engage in community service activities, from environmental clean-ups to educational initiatives, allowing our team to make a positive impact beyond our business operations.</p>
+                            <div class="activity-gallery">
+                                <div class="row g-2 mt-3">
+                                    <div class="col-4">
+                                        <img src="https://images.unsplash.com/photo-1544027993-37dbfe43562a?w=150&h=100&fit=crop&crop=center" alt="Community 1" class="img-fluid rounded-3">
+                                    </div>
+                                    <div class="col-4">
+                                        <img src="https://images.unsplash.com/photo-1560252829-804f1aedf1be?w=150&h=100&fit=crop&crop=center" alt="Community 2" class="img-fluid rounded-3">
+                                    </div>
+                                    <div class="col-4">
+                                        <img src="https://images.unsplash.com/photo-1559024094-4a0b775ecd68?w=150&h=100&fit=crop&crop=center" alt="Community 3" class="img-fluid rounded-3">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Employee Testimonials Section -->
+    <section class="testimonials-section py-5">
+        <div class="container">
+            <div class="row text-center mb-5">
+                <div class="col-12">
+                    <div class="section-header" data-aos="fade-up">
+                        <span class="section-badge">Employee Voices</span>
+                        <h2 class="section-title">What Our Team Says</h2>
+                        <p class="section-subtitle">Hear directly from our employees about their experiences at NMSWorks</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-12" data-aos="fade-up">
+                    <div class="testimonial-carousel">
+                        <div class="testimonial-item active">
+                            <div class="testimonial-content">
+                                <div class="testimonial-quote">
+                                    <i class="fas fa-quote-left"></i>
+                                </div>
+                                <p class="testimonial-text">"Working at NMSWorks has been an incredible journey of growth and learning. The collaborative environment, challenging projects, and supportive leadership have helped me develop both professionally and personally. I appreciate how the company values innovation and encourages us to explore new ideas."</p>
+                                <div class="testimonial-author">
+                                    <img src="https://images.unsplash.com/photo-1580489944761-15a19d654956?w=80&h=80&fit=crop&crop=center" alt="Priya Sharma" class="author-image">
+                                    <div class="author-info">
+                                        <h5 class="author-name">Priya Sharma</h5>
+                                        <p class="author-position">Senior Software Engineer</p>
+                                        <p class="author-tenure">5 years at NMSWorks</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="testimonial-item">
+                            <div class="testimonial-content">
+                                <div class="testimonial-quote">
+                                    <i class="fas fa-quote-left"></i>
+                                </div>
+                                <p class="testimonial-text">"What I value most about NMSWorks is the work-life balance and the emphasis on continuous learning. The company provides ample opportunities for professional development, from certification programs to conference attendance. The flexible work arrangements have allowed me to maintain a healthy balance between my career and personal life."</p>
+                                <div class="testimonial-author">
+                                    <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=80&h=80&fit=crop&crop=center" alt="Rahul Mehta" class="author-image">
+                                    <div class="author-info">
+                                        <h5 class="author-name">Rahul Mehta</h5>
+                                        <p class="author-position">Product Manager</p>
+                                        <p class="author-tenure">3 years at NMSWorks</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="testimonial-item">
+                            <div class="testimonial-content">
+                                <div class="testimonial-quote">
+                                    <i class="fas fa-quote-left"></i>
+                                </div>
+                                <p class="testimonial-text">"As someone who joined NMSWorks straight out of college, I've been amazed by the mentorship and growth opportunities available here. The company has a structured onboarding program and pairs new employees with experienced mentors. I've been able to work on challenging projects that have significantly accelerated my learning curve."</p>
+                                <div class="testimonial-author">
+                                    <img src="https://images.unsplash.com/photo-1573497019940-1c28c88b4f3e?w=80&h=80&fit=crop&crop=center" alt="Ananya Patel" class="author-image">
+                                    <div class="author-info">
+                                        <h5 class="author-name">Ananya Patel</h5>
+                                        <p class="author-position">Software Developer</p>
+                                        <p class="author-tenure">2 years at NMSWorks</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="testimonial-controls">
+                            <button class="control-prev">
+                                <i class="fas fa-arrow-left"></i>
+                            </button>
+                            <div class="control-indicators">
+                                <span class="indicator active"></span>
+                                <span class="indicator"></span>
+                                <span class="indicator"></span>
+                            </div>
+                            <button class="control-next">
+                                <i class="fas fa-arrow-right"></i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Day in the Life Section -->
+    <section class="day-in-life py-5 bg-dark-gradient">
+        <div class="container">
+            <div class="row text-center mb-5">
+                <div class="col-12">
+                    <div class="section-header" data-aos="fade-up">
+                        <span class="section-badge">Experience</span>
+                        <h2 class="section-title">A Day in the Life</h2>
+                        <p class="section-subtitle">Get a glimpse of what it's like to work at NMSWorks</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row align-items-center">
+                <div class="col-lg-6" data-aos="fade-right">
+                    <div class="day-in-life-video">
+                        <img src="https://images.unsplash.com/photo-1600880292203-757bb62b4baf?w=600&h=400&fit=crop&crop=center" alt="Day in the Life" class="img-fluid rounded-4 shadow-lg">
+                        <div class="video-overlay">
+                            <a href="#" class="video-play-btn">
+                                <i class="fas fa-play"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6" data-aos="fade-left">
+                    <div class="day-in-life-content">
+                        <h3>Experience Our Workplace Culture</h3>
+                        <p>Take a virtual tour of our offices and meet some of our team members as they share their experiences working at NMSWorks. From morning stand-ups to collaborative coding sessions, client meetings, and team lunches, get a sense of our dynamic work environment and vibrant culture.</p>
+                        
+                        <div class="day-highlights mt-4">
+                            <div class="highlight-item">
+                                <div class="highlight-icon">
+                                    <i class="fas fa-mug-hot"></i>
+                                </div>
+                                <div class="highlight-content">
+                                    <h5>Morning Rituals</h5>
+                                    <p>How our teams start their day with stand-up meetings and collaborative planning.</p>
+                                </div>
+                            </div>
+                            
+                            <div class="highlight-item">
+                                <div class="highlight-icon">
+                                    <i class="fas fa-laptop-code"></i>
+                                </div>
+                                <div class="highlight-content">
+                                    <h5>Collaborative Work</h5>
+                                    <p>See our engineers, designers, and product managers working together on innovative solutions.</p>
+                                </div>
+                            </div>
+                            
+                            <div class="highlight-item">
+                                <div class="highlight-icon">
+                                    <i class="fas fa-utensils"></i>
+                                </div>
+                                <div class="highlight-content">
+                                    <h5>Team Lunches</h5>
+                                    <p>Join us for our famous team lunches where we connect beyond work discussions.</p>
+                                </div>
+                            </div>
+                            
+                            <div class="highlight-item">
+                                <div class="highlight-icon">
+                                    <i class="fas fa-gamepad"></i>
+                                </div>
+                                <div class="highlight-content">
+                                    <h5>Break Time</h5>
+                                    <p>Discover how we recharge with quick gaming sessions, coffee breaks, and casual chats.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Instagram Feed Section -->
+    <section class="instagram-feed py-5">
+        <div class="container">
+            <div class="row text-center mb-5">
+                <div class="col-12">
+                    <div class="section-header" data-aos="fade-up">
+                        <span class="section-badge">Social Media</span>
+                        <h2 class="section-title">Follow Our Journey</h2>
+                        <p class="section-subtitle">Get a glimpse of our company culture through our social media</p>
+                        <div class="social-links mt-3">
+                            <a href="#" class="social-link"><i class="fab fa-instagram"></i></a>
+                            <a href="#" class="social-link"><i class="fab fa-linkedin"></i></a>
+                            <a href="#" class="social-link"><i class="fab fa-twitter"></i></a>
+                            <a href="#" class="social-link"><i class="fab fa-facebook"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row g-3">
+                <div class="col-lg-3 col-md-4 col-6" data-aos="fade-up">
+                    <div class="instagram-item">
+                        <img src="https://images.unsplash.com/photo-1522202176988-66273c2fd55f?w=300&h=300&fit=crop&crop=center" alt="Instagram Post" class="img-fluid">
+                        <div class="instagram-overlay">
+                            <div class="instagram-meta">
+                                <i class="fas fa-heart"></i>
+                                <span>245</span>
+                            </div>
+                            <a href="#" class="instagram-link">
+                                <i class="fab fa-instagram"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-4 col-6" data-aos="fade-up" data-aos-delay="100">
+                    <div class="instagram-item">
+                        <img src="https://images.unsplash.com/photo-1556761175-b413da4baf72?w=300&h=300&fit=crop&crop=center" alt="Instagram Post" class="img-fluid">
+                        <div class="instagram-overlay">
+                            <div class="instagram-meta">
+                                <i class="fas fa-heart"></i>
+                                <span>189</span>
+                            </div>
+                            <a href="#" class="instagram-link">
+                                <i class="fab fa-instagram"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-4 col-6" data-aos="fade-up" data-aos-delay="200">
+                    <div class="instagram-item">
+                        <img src="https://images.unsplash.com/photo-1522071901873-411886a10004?w=300&h=300&fit=crop&crop=center" alt="Instagram Post" class="img-fluid">
+                        <div class="instagram-overlay">
+                            <div class="instagram-meta">
+                                <i class="fas fa-heart"></i>
+                                <span>312</span>
+                            </div>
+                            <a href="#" class="instagram-link">
+                                <i class="fab fa-instagram"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-4 col-6" data-aos="fade-up" data-aos-delay="300">
+                    <div class="instagram-item">
+                        <img src="https://images.unsplash.com/photo-1543269865-cbf427effbad?w=300&h=300&fit=crop&crop=center" alt="Instagram Post" class="img-fluid">
+                        <div class="instagram-overlay">
+                            <div class="instagram-meta">
+                                <i class="fas fa-heart"></i>
+                                <span>276</span>
+                            </div>
+                            <a href="#" class="instagram-link">
+                                <i class="fab fa-instagram"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-4 col-6" data-aos="fade-up" data-aos-delay="400">
+                    <div class="instagram-item">
+                        <img src="https://images.unsplash.com/photo-1517245386807-bb43f82c33c4?w=300&h=300&fit=crop&crop=center" alt="Instagram Post" class="img-fluid">
+                        <div class="instagram-overlay">
+                            <div class="instagram-meta">
+                                <i class="fas fa-heart"></i>
+                                <span>198</span>
+                            </div>
+                            <a href="#" class="instagram-link">
+                                <i class="fab fa-instagram"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-4 col-6" data-aos="fade-up" data-aos-delay="500">
+                    <div class="instagram-item">
+                        <img src="https://images.unsplash.com/photo-1542744094-3a31f272c490?w=300&h=300&fit=crop&crop=center" alt="Instagram Post" class="img-fluid">
+                        <div class="instagram-overlay">
+                            <div class="instagram-meta">
+                                <i class="fas fa-heart"></i>
+                                <span>234</span>
+                            </div>
+                            <a href="#" class="instagram-link">
+                                <i class="fab fa-instagram"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-4 col-6" data-aos="fade-up" data-aos-delay="600">
+                    <div class="instagram-item">
+                        <img src="https://images.unsplash.com/photo-1521737852567-6949f3f9f2b5?w=300&h=300&fit=crop&crop=center" alt="Instagram Post" class="img-fluid">
+                        <div class="instagram-overlay">
+                            <div class="instagram-meta">
+                                <i class="fas fa-heart"></i>
+                                <span>287</span>
+                            </div>
+                            <a href="#" class="instagram-link">
+                                <i class="fab fa-instagram"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-4 col-6" data-aos="fade-up" data-aos-delay="700">
+                    <div class="instagram-item">
+                        <img src="https://images.unsplash.com/photo-1522202176988-66273c2fd55f?w=300&h=300&fit=crop&crop=center" alt="Instagram Post" class="img-fluid">
+                        <div class="instagram-overlay">
+                            <div class="instagram-meta">
+                                <i class="fas fa-heart"></i>
+                                <span>321</span>
+                            </div>
+                            <a href="#" class="instagram-link">
+                                <i class="fab fa-instagram"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="cta-section py-5">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-lg-10">
+                    <div class="cta-content text-center" data-aos="fade-up">
+                        <h2 class="cta-title">Ready to Join Our Team?</h2>
+                        <p class="cta-subtitle">Explore current opportunities and become part of our innovative and collaborative workplace.</p>
+                        <div class="cta-buttons mt-4">
+                            <a href="career.html" class="btn btn-primary btn-lg">
+                                View Open Positions
+                                <span class="btn-shine"></span>
+                            </a>
+                            <a href="../contact.html" class="btn btn-outline-primary btn-lg">
+                                Contact Us
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer py-5">
+        <div class="container">
+            <div class="row g-4">
+                <div class="col-lg-4">
+                    <div class="footer-brand">
+                        <img src="https://images.unsplash.com/photo-1560472354-b33ff0c44a43?w=150&h=60&fit=crop&crop=center" alt="NMSWorks" class="footer-logo">
+                        <h4 class="mt-3">NMSWorks Software</h4>
+                        <p>Leading provider of telecom software solutions, serving operators worldwide with innovative OSS/BSS platforms and network management systems.</p>
+                        <div class="social-links">
+                            <a href="#" class="social-link"><i class="fab fa-linkedin"></i></a>
+                            <a href="#" class="social-link"><i class="fab fa-twitter"></i></a>
+                            <a href="#" class="social-link"><i class="fab fa-facebook"></i></a>
+                            <a href="#" class="social-link"><i class="fab fa-youtube"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-2 col-md-4">
+                    <h5 class="footer-title">Company</h5>
+                    <ul class="footer-links">
+                        <li><a href="people.html">People</a></li>
+                        <li><a href="management.html">Management</a></li>
+                        <li><a href="news-events.html">News & Events</a></li>
+                        <li><a href="life-at-nmsworks.html">Life at NMSWorks</a></li>
+                        <li><a href="career.html">Career</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-2 col-md-4">
+                    <h5 class="footer-title">Solutions</h5>
+                    <ul class="footer-links">
+                        <li><a href="../portfolio/products.html">Products</a></li>
+                        <li><a href="../portfolio/solutions.html">Solutions</a></li>
+                        <li><a href="../innovation.html">Innovation</a></li>
+                        <li><a href="../partners.html">Partners</a></li>
+                        <li><a href="../resources.html">Resources</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-4 col-md-4">
+                    <h5 class="footer-title">Contact</h5>
+                    <ul class="footer-contact">
+                        <li>
+                            <i class="fas fa-map-marker-alt"></i>
+                            <span>123 Tech Park, Innovation Street, Chennai, India 600001</span>
+                        </li>
+                        <li>
+                            <i class="fas fa-phone"></i>
+                            <span>+91 44 1234 5678</span>
+                        </li>
+                        <li>
+                            <i class="fas fa-envelope"></i>
+                            <span>info@nmsworks.com</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <div class="row">
+                    <div class="col-md-6">
+                        <p class="copyright">© 2023 NMSWorks Software. All rights reserved.</p>
+                    </div>
+                    <div class="col-md-6 text-md-end">
+                        <ul class="footer-bottom-links">
+                            <li><a href="#">Privacy Policy</a></li>
+                            <li><a href="#">Terms of Service</a></li>
+                            <li><a href="#">Sitemap</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Back to Top Button -->
+    <button id="backToTop" class="back-to-top">
+        <i class="fas fa-arrow-up"></i>
+    </button>
+
+    <!-- Scripts -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="../src/main.js"></script>
+    
+    <!-- Testimonial Carousel Script -->
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const testimonialItems = document.querySelectorAll('.testimonial-item');
+            const indicators = document.querySelectorAll('.control-indicators .indicator');
+            const prevBtn = document.querySelector('.control-prev');
+            const nextBtn = document.querySelector('.control-next');
+            let currentIndex = 0;
+            
+            function showTestimonial(index) {
+                // Hide all testimonials
+                testimonialItems.forEach(item => {
+                    item.classList.remove('active');
+                });
+                
+                // Remove active class from all indicators
+                indicators.forEach(indicator => {
+                    indicator.classList.remove('active');
+                });
+                
+                // Show the selected testimonial and activate indicator
+                testimonialItems[index].classList.add('active');
+                indicators[index].classList.add('active');
+                currentIndex = index;
+            }
+            
+            // Event listeners for controls
+            prevBtn.addEventListener('click', function() {
+                let newIndex = currentIndex - 1;
+                if (newIndex < 0) newIndex = testimonialItems.length - 1;
+                showTestimonial(newIndex);
+            });
+            
+            nextBtn.addEventListener('click', function() {
+                let newIndex = currentIndex + 1;
+                if (newIndex >= testimonialItems.length) newIndex = 0;
+                showTestimonial(newIndex);
+            });
+            
+            // Event listeners for indicators
+            indicators.forEach((indicator, index) => {
+                indicator.addEventListener('click', function() {
+                    showTestimonial(index);
+                });
+            });
+            
+            // Auto rotate testimonials every 5 seconds
+            setInterval(function() {
+                let newIndex = currentIndex + 1;
+                if (newIndex >= testimonialItems.length) newIndex = 0;
+                showTestimonial(newIndex);
+            }, 5000);
+        });
+    </script>
+</body>
+</html>

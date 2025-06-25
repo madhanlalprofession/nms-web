@@ -1,0 +1,529 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Partners - NMSWorks</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Poppins:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link href="./src/styles.css" rel="stylesheet">
+</head>
+<body class="dark-theme">
+    <!-- Preloader -->
+    <div id="preloader">
+        <div class="preloader-content">
+            <div class="spinner"></div>
+            <h3>Loading NMSWorks</h3>
+        </div>
+    </div>
+
+    <!-- Header -->
+    <nav class="navbar navbar-expand-lg fixed-top" id="mainNav">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">
+                <div class="logo-container">
+                    <img src="https://images.unsplash.com/photo-1560472354-b33ff0c44a43?w=150&h=60&fit=crop&crop=center" alt="NMSWorks" class="logo">
+                    <span class="logo-text">NMSWorks</span>
+                </div>
+            </a>
+            
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="hamburger-line"></span>
+                <span class="hamburger-line"></span>
+                <span class="hamburger-line"></span>
+            </button>
+            
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">
+                            <i class="fas fa-briefcase me-2"></i>Portfolio
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="portfolio/products.html"><i class="fas fa-cube me-2"></i>Products</a></li>
+                            <li><a class="dropdown-item" href="portfolio/solutions.html"><i class="fas fa-lightbulb me-2"></i>Solutions</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="innovation.html">
+                            <i class="fas fa-rocket me-2"></i>Innovation
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="partners.html">
+                            <i class="fas fa-handshake me-2"></i>Partners
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="resources.html">
+                            <i class="fas fa-book me-2"></i>Resources
+                        </a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">
+                            <i class="fas fa-users me-2"></i>About Us
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="about/people.html"><i class="fas fa-user-friends me-2"></i>People</a></li>
+                            <li><a class="dropdown-item" href="about/management.html"><i class="fas fa-user-tie me-2"></i>Management</a></li>
+                            <li><a class="dropdown-item" href="about/news-events.html"><i class="fas fa-newspaper me-2"></i>News & Events</a></li>
+                            <li><a class="dropdown-item" href="about/life-at-nmsworks.html"><i class="fas fa-heart me-2"></i>Life at NMSWorks</a></li>
+                            <li><a class="dropdown-item" href="about/career.html"><i class="fas fa-briefcase me-2"></i>Career</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link contact-btn" href="contact.html">
+                            <i class="fas fa-envelope me-2"></i>Contact
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Page Hero Section -->
+    <section class="page-hero">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-6">
+                    <div class="hero-content" data-aos="fade-right">
+                        <div class="hero-badge">
+                            <i class="fas fa-handshake"></i>
+                            <span>Strategic Alliances</span>
+                        </div>
+                        <h1 class="hero-title">Our <span class="gradient-text">Partners</span> Ecosystem</h1>
+                        <p class="hero-subtitle">Collaborating with industry leaders to deliver comprehensive telecom solutions and drive innovation.</p>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <div class="hero-image" data-aos="fade-left">
+                        <img src="https://images.unsplash.com/photo-1556761175-5973dc0f32e7?w=600&h=400&fit=crop&crop=center" alt="Partners" class="img-fluid rounded-4 shadow-lg">
+                        <div class="image-overlay"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Partner Types Section -->
+    <section class="partner-types py-5">
+        <div class="container">
+            <div class="row text-center mb-5">
+                <div class="col-12">
+                    <div class="section-header" data-aos="fade-up">
+                        <span class="section-badge">Partnership Programs</span>
+                        <h2 class="section-title">Types of Partnerships</h2>
+                        <p class="section-subtitle">Different ways to collaborate with NMSWorks</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row g-4">
+                <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="100">
+                    <div class="partner-type-card">
+                        <div class="card-icon">
+                            <i class="fas fa-cogs"></i>
+                        </div>
+                        <h4>Technology Partners</h4>
+                        <p>Strategic alliances with technology providers to integrate complementary products and create comprehensive solutions.</p>
+                        <ul class="feature-list">
+                            <li><i class="fas fa-check-circle"></i> Joint solution development</li>
+                            <li><i class="fas fa-check-circle"></i> Technology integration</li>
+                            <li><i class="fas fa-check-circle"></i> Co-innovation initiatives</li>
+                        </ul>
+                        <a href="#" class="btn btn-outline-primary">Learn More</a>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="200">
+                    <div class="partner-type-card">
+                        <div class="card-icon">
+                            <i class="fas fa-globe"></i>
+                        </div>
+                        <h4>Channel Partners</h4>
+                        <p>Partnerships with resellers, distributors, and system integrators to extend market reach and deliver solutions to customers worldwide.</p>
+                        <ul class="feature-list">
+                            <li><i class="fas fa-check-circle"></i> Solution reselling</li>
+                            <li><i class="fas fa-check-circle"></i> Implementation services</li>
+                            <li><i class="fas fa-check-circle"></i> Local market expertise</li>
+                        </ul>
+                        <a href="#" class="btn btn-outline-primary">Learn More</a>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="300">
+                    <div class="partner-type-card">
+                        <div class="card-icon">
+                            <i class="fas fa-graduation-cap"></i>
+                        </div>
+                        <h4>Academic Partners</h4>
+                        <p>Collaborations with universities and research institutions to advance telecom technology and develop talent.</p>
+                        <ul class="feature-list">
+                            <li><i class="fas fa-check-circle"></i> Research collaboration</li>
+                            <li><i class="fas fa-check-circle"></i> Talent development</li>
+                            <li><i class="fas fa-check-circle"></i> Innovation programs</li>
+                        </ul>
+                        <a href="#" class="btn btn-outline-primary">Learn More</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Featured Partners Section -->
+    <section class="featured-partners py-5 bg-dark-gradient">
+        <div class="container">
+            <div class="row text-center mb-5">
+                <div class="col-12">
+                    <div class="section-header" data-aos="fade-up">
+                        <span class="section-badge">Our Network</span>
+                        <h2 class="section-title">Featured Partners</h2>
+                        <p class="section-subtitle">Meet some of our key strategic partners</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row g-4">
+                <div class="col-lg-3 col-md-6" data-aos="fade-up" data-aos-delay="100">
+                    <div class="featured-partner-card">
+                        <div class="partner-logo">
+                            <img src="https://images.unsplash.com/photo-1560472354-b33ff0c44a43?w=150&h=80&fit=crop&crop=center" alt="Partner Logo" class="img-fluid">
+                        </div>
+                        <h5>TechCorp Global</h5>
+                        <p class="partner-type">Technology Partner</p>
+                        <p>Integrating cloud infrastructure solutions with our network management platforms.</p>
+                        <a href="#" class="btn btn-sm btn-primary">View Partnership</a>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6" data-aos="fade-up" data-aos-delay="200">
+                    <div class="featured-partner-card">
+                        <div class="partner-logo">
+                            <img src="https://images.unsplash.com/photo-1560472354-b33ff0c44a43?w=150&h=80&fit=crop&crop=center" alt="Partner Logo" class="img-fluid">
+                        </div>
+                        <h5>NetSolutions Inc.</h5>
+                        <p class="partner-type">Channel Partner</p>
+                        <p>Delivering our solutions to enterprise customers across North America and Europe.</p>
+                        <a href="#" class="btn btn-sm btn-primary">View Partnership</a>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6" data-aos="fade-up" data-aos-delay="300">
+                    <div class="featured-partner-card">
+                        <div class="partner-logo">
+                            <img src="https://images.unsplash.com/photo-1560472354-b33ff0c44a43?w=150&h=80&fit=crop&crop=center" alt="Partner Logo" class="img-fluid">
+                        </div>
+                        <h5>Telecom University</h5>
+                        <p class="partner-type">Academic Partner</p>
+                        <p>Collaborating on research initiatives in 5G networks and AI-driven network management.</p>
+                        <a href="#" class="btn btn-sm btn-primary">View Partnership</a>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6" data-aos="fade-up" data-aos-delay="400">
+                    <div class="featured-partner-card">
+                        <div class="partner-logo">
+                            <img src="https://images.unsplash.com/photo-1560472354-b33ff0c44a43?w=150&h=80&fit=crop&crop=center" alt="Partner Logo" class="img-fluid">
+                        </div>
+                        <h5>SecureNet Systems</h5>
+                        <p class="partner-type">Technology Partner</p>
+                        <p>Enhancing our solutions with advanced cybersecurity capabilities and threat intelligence.</p>
+                        <a href="#" class="btn btn-sm btn-primary">View Partnership</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Partner Benefits Section -->
+    <section class="partner-benefits py-5">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-6" data-aos="fade-right">
+                    <div class="benefits-content">
+                        <span class="section-badge">Why Partner With Us</span>
+                        <h2 class="section-title">Partner Benefits</h2>
+                        <p>Joining the NMSWorks partner ecosystem provides numerous advantages to help grow your business and deliver exceptional value to customers.</p>
+                        
+                        <div class="benefits-list">
+                            <div class="benefit-item">
+                                <div class="benefit-icon">
+                                    <i class="fas fa-chart-line"></i>
+                                </div>
+                                <div class="benefit-details">
+                                    <h5>Business Growth</h5>
+                                    <p>Access new markets and customer segments to expand your business reach and revenue opportunities.</p>
+                                </div>
+                            </div>
+                            <div class="benefit-item">
+                                <div class="benefit-icon">
+                                    <i class="fas fa-tools"></i>
+                                </div>
+                                <div class="benefit-details">
+                                    <h5>Technical Support</h5>
+                                    <p>Receive dedicated technical assistance, training, and resources to ensure successful implementations.</p>
+                                </div>
+                            </div>
+                            <div class="benefit-item">
+                                <div class="benefit-icon">
+                                    <i class="fas fa-bullhorn"></i>
+                                </div>
+                                <div class="benefit-details">
+                                    <h5>Marketing Support</h5>
+                                    <p>Joint marketing activities, co-branded materials, and lead generation programs to drive business.</p>
+                                </div>
+                            </div>
+                            <div class="benefit-item">
+                                <div class="benefit-icon">
+                                    <i class="fas fa-certificate"></i>
+                                </div>
+                                <div class="benefit-details">
+                                    <h5>Certification Programs</h5>
+                                    <p>Enhance your team's expertise through comprehensive certification and training programs.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6" data-aos="fade-left">
+                    <div class="benefits-image">
+                        <img src="https://images.unsplash.com/photo-1552664730-d307ca884978?w=600&h=400&fit=crop&crop=center" alt="Partner Benefits" class="img-fluid rounded-4 shadow-lg">
+                        <div class="image-overlay"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Partner Testimonials Section -->
+    <section class="partner-testimonials py-5 bg-dark-gradient">
+        <div class="container">
+            <div class="row text-center mb-5">
+                <div class="col-12">
+                    <div class="section-header" data-aos="fade-up">
+                        <span class="section-badge">Success Stories</span>
+                        <h2 class="section-title">Partner Testimonials</h2>
+                        <p class="section-subtitle">Hear what our partners have to say about working with us</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row g-4">
+                <div class="col-lg-4" data-aos="fade-up" data-aos-delay="100">
+                    <div class="testimonial-card">
+                        <div class="testimonial-content">
+                            <p>"Partnering with NMSWorks has been a game-changer for our business. Their innovative solutions and dedicated support have helped us deliver exceptional value to our customers."</p>
+                        </div>
+                        <div class="testimonial-author">
+                            <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=80&h=80&fit=crop&crop=faces" alt="Testimonial Author" class="author-image">
+                            <div class="author-info">
+                                <h5>John Smith</h5>
+                                <p>CEO, TechCorp Global</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4" data-aos="fade-up" data-aos-delay="200">
+                    <div class="testimonial-card">
+                        <div class="testimonial-content">
+                            <p>"The technical expertise and collaborative approach of the NMSWorks team have made them an ideal partner for our system integration business. Together, we've successfully implemented complex solutions for major telecom operators."</p>
+                        </div>
+                        <div class="testimonial-author">
+                            <img src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=80&h=80&fit=crop&crop=faces" alt="Testimonial Author" class="author-image">
+                            <div class="author-info">
+                                <h5>Sarah Johnson</h5>
+                                <p>CTO, NetSolutions Inc.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4" data-aos="fade-up" data-aos-delay="300">
+                    <div class="testimonial-card">
+                        <div class="testimonial-content">
+                            <p>"Our research collaboration with NMSWorks has led to breakthrough innovations in network management. Their commitment to advancing telecom technology aligns perfectly with our academic mission."</p>
+                        </div>
+                        <div class="testimonial-author">
+                            <img src="https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=80&h=80&fit=crop&crop=faces" alt="Testimonial Author" class="author-image">
+                            <div class="author-info">
+                                <h5>Dr. Robert Chen</h5>
+                                <p>Director, Telecom University</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Become a Partner Section -->
+    <section class="become-partner py-5">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-lg-10">
+                    <div class="partner-application" data-aos="fade-up">
+                        <div class="row">
+                            <div class="col-lg-6">
+                                <div class="application-content">
+                                    <span class="section-badge">Join Our Ecosystem</span>
+                                    <h2 class="section-title">Become a Partner</h2>
+                                    <p>Interested in partnering with NMSWorks? Fill out the form to start the conversation and explore collaboration opportunities.</p>
+                                    
+                                    <div class="partner-steps">
+                                        <div class="step">
+                                            <div class="step-number">1</div>
+                                            <div class="step-content">
+                                                <h5>Submit Application</h5>
+                                                <p>Complete the partner application form with your company details.</p>
+                                            </div>
+                                        </div>
+                                        <div class="step">
+                                            <div class="step-number">2</div>
+                                            <div class="step-content">
+                                                <h5>Initial Discussion</h5>
+                                                <p>Our partnership team will contact you to discuss potential collaboration.</p>
+                                            </div>
+                                        </div>
+                                        <div class="step">
+                                            <div class="step-number">3</div>
+                                            <div class="step-content">
+                                                <h5>Partnership Agreement</h5>
+                                                <p>Finalize partnership terms and sign the agreement.</p>
+                                            </div>
+                                        </div>
+                                        <div class="step">
+                                            <div class="step-number">4</div>
+                                            <div class="step-content">
+                                                <h5>Onboarding & Training</h5>
+                                                <p>Complete partner onboarding and receive necessary training.</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-6">
+                                <div class="application-form">
+                                    <form>
+                                        <div class="mb-3">
+                                            <label for="companyName" class="form-label">Company Name</label>
+                                            <input type="text" class="form-control" id="companyName" required>
+                                        </div>
+                                        <div class="mb-3">
+                                            <label for="contactName" class="form-label">Contact Name</label>
+                                            <input type="text" class="form-control" id="contactName" required>
+                                        </div>
+                                        <div class="mb-3">
+                                            <label for="contactEmail" class="form-label">Email Address</label>
+                                            <input type="email" class="form-control" id="contactEmail" required>
+                                        </div>
+                                        <div class="mb-3">
+                                            <label for="contactPhone" class="form-label">Phone Number</label>
+                                            <input type="tel" class="form-control" id="contactPhone">
+                                        </div>
+                                        <div class="mb-3">
+                                            <label for="partnerType" class="form-label">Partnership Type</label>
+                                            <select class="form-select" id="partnerType" required>
+                                                <option value="" selected disabled>Select Partnership Type</option>
+                                                <option value="technology">Technology Partner</option>
+                                                <option value="channel">Channel Partner</option>
+                                                <option value="academic">Academic Partner</option>
+                                                <option value="other">Other</option>
+                                            </select>
+                                        </div>
+                                        <div class="mb-3">
+                                            <label for="message" class="form-label">Tell Us About Your Company</label>
+                                            <textarea class="form-control" id="message" rows="4" required></textarea>
+                                        </div>
+                                        <button type="submit" class="btn btn-primary w-100">
+                                            <i class="fas fa-paper-plane me-2"></i>Submit Application
+                                            <span class="btn-shine"></span>
+                                        </button>
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer py-5">
+        <div class="container">
+            <div class="row g-4">
+                <div class="col-lg-4">
+                    <div class="footer-brand">
+                        <img src="https://images.unsplash.com/photo-1560472354-b33ff0c44a43?w=150&h=60&fit=crop&crop=center" alt="NMSWorks" class="footer-logo">
+                        <h4 class="mt-3">NMSWorks Software</h4>
+                        <p>Leading provider of telecom software solutions, serving operators worldwide with innovative OSS/BSS platforms and network management systems.</p>
+                        <div class="social-links">
+                            <a href="#" class="social-link"><i class="fab fa-linkedin"></i></a>
+                            <a href="#" class="social-link"><i class="fab fa-twitter"></i></a>
+                            <a href="#" class="social-link"><i class="fab fa-facebook"></i></a>
+                            <a href="#" class="social-link"><i class="fab fa-youtube"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-2 col-md-4">
+                    <h5 class="footer-title">Company</h5>
+                    <ul class="footer-links">
+                        <li><a href="about/people.html">People</a></li>
+                        <li><a href="about/management.html">Management</a></li>
+                        <li><a href="about/news-events.html">News & Events</a></li>
+                        <li><a href="about/life-at-nmsworks.html">Life at NMSWorks</a></li>
+                        <li><a href="about/career.html">Career</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-2 col-md-4">
+                    <h5 class="footer-title">Solutions</h5>
+                    <ul class="footer-links">
+                        <li><a href="portfolio/products.html">Products</a></li>
+                        <li><a href="portfolio/solutions.html">Solutions</a></li>
+                        <li><a href="innovation.html">Innovation</a></li>
+                        <li><a href="partners.html">Partners</a></li>
+                        <li><a href="resources.html">Resources</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-4 col-md-4">
+                    <h5 class="footer-title">Contact</h5>
+                    <ul class="footer-contact">
+                        <li>
+                            <i class="fas fa-map-marker-alt"></i>
+                            <span>123 Tech Park, Innovation Street, Chennai, India 600001</span>
+                        </li>
+                        <li>
+                            <i class="fas fa-phone"></i>
+                            <span>+91 44 1234 5678</span>
+                        </li>
+                        <li>
+                            <i class="fas fa-envelope"></i>
+                            <span>info@nmsworks.com</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <div class="row">
+                    <div class="col-md-6">
+                        <p class="copyright">© 2023 NMSWorks Software. All rights reserved.</p>
+                    </div>
+                    <div class="col-md-6 text-md-end">
+                        <ul class="footer-bottom-links">
+                            <li><a href="#">Privacy Policy</a></li>
+                            <li><a href="#">Terms of Service</a></li>
+                            <li><a href="#">Sitemap</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Back to Top Button -->
+    <button id="backToTop" class="back-to-top">
+        <i class="fas fa-arrow-up"></i>
+    </button>
+
+    <!-- Scripts -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="./src/main.js"></script>
+</body>
+</html>

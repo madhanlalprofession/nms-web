@@ -1,0 +1,420 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Privacy Policy | NMSWorks</title>
+    <meta name="description" content="NMSWorks Privacy Policy - Learn how we collect, use, and protect your personal information.">
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/svg+xml" href="/public/vite.svg" />
+    
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- AOS CSS -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="./src/styles.css">
+    <style>
+        /* Privacy Policy specific styles */
+        .privacy-section {
+            background-color: var(--color-bg-light);
+            padding: 80px 0;
+        }
+        
+        .privacy-section h3 {
+            color: var(--color-navy);
+            margin-top: 40px;
+            margin-bottom: 20px;
+            font-weight: 600;
+        }
+        
+        .privacy-section h4 {
+            color: var(--color-navy);
+            margin-top: 30px;
+            margin-bottom: 15px;
+            font-weight: 500;
+        }
+        
+        .privacy-section p, .privacy-section ul {
+            color: var(--color-text);
+            margin-bottom: 20px;
+            line-height: 1.7;
+        }
+        
+        .privacy-section ul {
+            padding-left: 20px;
+        }
+        
+        .privacy-section ul li {
+            margin-bottom: 10px;
+        }
+        
+        .privacy-card {
+            background-color: #fff;
+            border-radius: 10px;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+            padding: 30px;
+            margin-bottom: 30px;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+        
+        .privacy-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+        }
+        
+        .privacy-toc {
+            background-color: rgba(var(--color-accent-blue-rgb), 0.05);
+            border-left: 4px solid var(--color-accent-blue);
+            padding: 20px 25px;
+            border-radius: 0 8px 8px 0;
+            margin-bottom: 40px;
+        }
+        
+        .privacy-toc h4 {
+            color: var(--color-navy);
+            margin-top: 0;
+            margin-bottom: 15px;
+        }
+        
+        .privacy-toc ul {
+            list-style-type: none;
+            padding-left: 0;
+        }
+        
+        .privacy-toc ul li {
+            margin-bottom: 10px;
+        }
+        
+        .privacy-toc ul li a {
+            color: var(--color-navy);
+            text-decoration: none;
+            transition: color 0.3s ease;
+            display: block;
+            padding: 5px 0;
+            border-bottom: 1px dashed rgba(var(--color-navy-rgb), 0.1);
+        }
+        
+        .privacy-toc ul li a:hover {
+            color: var(--color-accent-blue);
+        }
+        
+        .privacy-last-updated {
+            font-style: italic;
+            color: var(--color-text-light);
+            margin-bottom: 30px;
+        }
+        
+        .privacy-contact-info {
+            background-color: rgba(var(--color-accent-green-rgb), 0.05);
+            border-radius: 8px;
+            padding: 25px;
+            margin-top: 40px;
+        }
+        
+        .privacy-contact-info h4 {
+            color: var(--color-accent-green);
+            margin-top: 0;
+        }
+    </style>
+</head>
+<body>
+    <!-- Preloader -->
+    <div class="preloader">
+        <div class="preloader-spinner"></div>
+    </div>
+
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg fixed-top">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">
+                <img src="https://images.unsplash.com/photo-1560472354-b33ff0c44a43?w=150&h=60&fit=crop&crop=center" alt="NMSWorks">
+                <span>NMSWorks</span>
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            About Us
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="about/people.html">Our People</a></li>
+                            <li><a class="dropdown-item" href="about/management.html">Management</a></li>
+                            <li><a class="dropdown-item" href="about/news-events.html">News & Events</a></li>
+                            <li><a class="dropdown-item" href="about/life-at-nmsworks.html">Life at NMSWorks</a></li>
+                            <li><a class="dropdown-item" href="about/career.html">Careers</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            Portfolio
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="portfolio/products.html">Products</a></li>
+                            <li><a class="dropdown-item" href="portfolio/solutions.html">Solutions</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="innovation.html">Innovation</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="partners.html">Partners</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="resources.html">Resources</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contact.html">Contact</a>
+                    </li>
+                </ul>
+                <div class="navbar-buttons ms-lg-3">
+                    <a href="contact.html" class="btn btn-primary btn-sm">
+                        <i class="fas fa-paper-plane me-2"></i>Get a Demo
+                    </a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero-section small-hero">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-12 text-center">
+                    <div class="hero-content" data-aos="fade-up">
+                        <h1>Privacy Policy</h1>
+                        <p>How we collect, use, and protect your personal information</p>
+                        <nav aria-label="breadcrumb">
+                            <ol class="breadcrumb justify-content-center">
+                                <li class="breadcrumb-item"><a href="index.html">Home</a></li>
+                                <li class="breadcrumb-item active" aria-current="page">Privacy Policy</li>
+                            </ol>
+                        </nav>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="hero-shape-1"></div>
+        <div class="hero-shape-2"></div>
+    </section>
+
+    <!-- Privacy Policy Section -->
+    <section class="privacy-section">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="privacy-card" data-aos="fade-up">
+                        <p class="privacy-last-updated">Last Updated: May 15, 2024</p>
+                        
+                        <div class="privacy-toc" data-aos="fade-up" data-aos-delay="100">
+                            <h4>Table of Contents</h4>
+                            <ul>
+                                <li><a href="#introduction">1. Introduction</a></li>
+                                <li><a href="#information-we-collect">2. Information We Collect</a></li>
+                                <li><a href="#how-we-use-information">3. How We Use Your Information</a></li>
+                                <li><a href="#information-sharing">4. Information Sharing and Disclosure</a></li>
+                                <li><a href="#data-security">5. Data Security</a></li>
+                                <li><a href="#your-rights">6. Your Rights and Choices</a></li>
+                                <li><a href="#cookies">7. Cookies and Similar Technologies</a></li>
+                                <li><a href="#international-transfers">8. International Data Transfers</a></li>
+                                <li><a href="#children">9. Children's Privacy</a></li>
+                                <li><a href="#changes">10. Changes to This Privacy Policy</a></li>
+                                <li><a href="#contact">11. Contact Us</a></li>
+                            </ul>
+                        </div>
+                        
+                        <h3 id="introduction" data-aos="fade-up">1. Introduction</h3>
+                        <p data-aos="fade-up" data-aos-delay="100">NMSWorks Software Limited ("NMSWorks," "we," "our," or "us") is committed to protecting your privacy. This Privacy Policy explains how we collect, use, disclose, and safeguard your information when you visit our website, use our products and services, or otherwise communicate with us.</p>
+                        <p data-aos="fade-up" data-aos-delay="150">Please read this Privacy Policy carefully. If you do not agree with the terms of this Privacy Policy, please do not access our website or use our services.</p>
+                        
+                        <h3 id="information-we-collect" data-aos="fade-up">2. Information We Collect</h3>
+                        <p data-aos="fade-up" data-aos-delay="100">We collect information that you provide directly to us, information we obtain automatically when you use our services, and information from third-party sources.</p>
+                        
+                        <h4 data-aos="fade-up">Information You Provide to Us</h4>
+                        <p data-aos="fade-up" data-aos-delay="100">We collect information you provide directly to us when you:</p>
+                        <ul data-aos="fade-up" data-aos-delay="150">
+                            <li>Create an account or register for our services</li>
+                            <li>Fill out a form on our website</li>
+                            <li>Subscribe to our newsletter</li>
+                            <li>Request a demo or information about our products</li>
+                            <li>Participate in surveys or promotions</li>
+                            <li>Contact our customer support</li>
+                            <li>Apply for a job</li>
+                        </ul>
+                        <p data-aos="fade-up" data-aos-delay="200">This information may include your name, email address, phone number, company name, job title, postal address, and any other information you choose to provide.</p>
+                        
+                        <h4 data-aos="fade-up">Information We Collect Automatically</h4>
+                        <p data-aos="fade-up" data-aos-delay="100">When you access or use our services, we automatically collect certain information, including:</p>
+                        <ul data-aos="fade-up" data-aos-delay="150">
+                            <li>Log Information: We collect log information about your use of our services, including the type of browser you use, access times, pages viewed, and your IP address.</li>
+                            <li>Device Information: We collect information about the device you use to access our services, including the hardware model, operating system and version, unique device identifiers, and mobile network information.</li>
+                            <li>Usage Information: We collect information about your usage of our services, such as the features you use, the actions you take, and the time, frequency, and duration of your activities.</li>
+                            <li>Location Information: We may collect information about your location when you access or use our services.</li>
+                        </ul>
+                        
+                        <h3 id="how-we-use-information" data-aos="fade-up">3. How We Use Your Information</h3>
+                        <p data-aos="fade-up" data-aos-delay="100">We use the information we collect to:</p>
+                        <ul data-aos="fade-up" data-aos-delay="150">
+                            <li>Provide, maintain, and improve our services</li>
+                            <li>Process transactions and send related information</li>
+                            <li>Send you technical notices, updates, security alerts, and support messages</li>
+                            <li>Respond to your comments, questions, and requests</li>
+                            <li>Communicate with you about products, services, offers, promotions, and events</li>
+                            <li>Monitor and analyze trends, usage, and activities in connection with our services</li>
+                            <li>Detect, investigate, and prevent fraudulent transactions and other illegal activities</li>
+                            <li>Personalize and improve your experience</li>
+                            <li>Facilitate contests, sweepstakes, and promotions</li>
+                        </ul>
+                        
+                        <h3 id="information-sharing" data-aos="fade-up">4. Information Sharing and Disclosure</h3>
+                        <p data-aos="fade-up" data-aos-delay="100">We may share the information we collect in various ways, including:</p>
+                        <ul data-aos="fade-up" data-aos-delay="150">
+                            <li>With vendors, consultants, and other service providers who need access to such information to carry out work on our behalf</li>
+                            <li>In response to a request for information if we believe disclosure is in accordance with, or required by, any applicable law, regulation, or legal process</li>
+                            <li>If we believe your actions are inconsistent with our user agreements or policies, or to protect the rights, property, and safety of NMSWorks or others</li>
+                            <li>In connection with, or during negotiations of, any merger, sale of company assets, financing, or acquisition of all or a portion of our business by another company</li>
+                            <li>Between and among NMSWorks and our current and future parents, affiliates, subsidiaries, and other companies under common control and ownership</li>
+                            <li>With your consent or at your direction</li>
+                        </ul>
+                        
+                        <h3 id="data-security" data-aos="fade-up">5. Data Security</h3>
+                        <p data-aos="fade-up" data-aos-delay="100">We take reasonable measures to help protect information about you from loss, theft, misuse, unauthorized access, disclosure, alteration, and destruction. However, no security system is impenetrable, and we cannot guarantee the security of our systems or your information.</p>
+                        
+                        <h3 id="your-rights" data-aos="fade-up">6. Your Rights and Choices</h3>
+                        <p data-aos="fade-up" data-aos-delay="100">You have certain rights and choices regarding your personal information:</p>
+                        <ul data-aos="fade-up" data-aos-delay="150">
+                            <li>Account Information: You may update, correct, or delete your account information at any time by logging into your account or contacting us.</li>
+                            <li>Marketing Communications: You may opt out of receiving promotional emails from us by following the instructions in those emails. If you opt out, we may still send you non-promotional emails, such as those about your account or our ongoing business relations.</li>
+                            <li>Cookies: Most web browsers are set to accept cookies by default. If you prefer, you can usually choose to set your browser to remove or reject browser cookies.</li>
+                            <li>Do Not Track: Some browsers offer a "Do Not Track" feature that signals to websites that you do not want to have your online activities tracked. We currently do not respond to "Do Not Track" signals.</li>
+                        </ul>
+                        
+                        <h3 id="cookies" data-aos="fade-up">7. Cookies and Similar Technologies</h3>
+                        <p data-aos="fade-up" data-aos-delay="100">We use cookies and similar technologies to collect information about your browsing activities and to distinguish you from other users of our website. This helps us to provide you with a good experience when you browse our website and also allows us to improve our site.</p>
+                        <p data-aos="fade-up" data-aos-delay="150">We use the following types of cookies:</p>
+                        <ul data-aos="fade-up" data-aos-delay="200">
+                            <li>Strictly Necessary Cookies: These cookies are required for the operation of our website.</li>
+                            <li>Analytical/Performance Cookies: These cookies allow us to recognize and count the number of visitors and to see how visitors move around our website.</li>
+                            <li>Functionality Cookies: These cookies enable us to personalize our content for you and remember your preferences.</li>
+                            <li>Targeting Cookies: These cookies record your visit to our website, the pages you have visited, and the links you have followed.</li>
+                        </ul>
+                        
+                        <h3 id="international-transfers" data-aos="fade-up">8. International Data Transfers</h3>
+                        <p data-aos="fade-up" data-aos-delay="100">We may transfer your personal information to countries other than the country in which you initially provided the information for the purposes described in this Privacy Policy. If we transfer your personal information to countries outside of your country of residence, we will ensure that appropriate safeguards are in place to protect your personal information.</p>
+                        
+                        <h3 id="children" data-aos="fade-up">9. Children's Privacy</h3>
+                        <p data-aos="fade-up" data-aos-delay="100">Our services are not directed to children under the age of 16, and we do not knowingly collect personal information from children under the age of 16. If we learn that we have collected personal information from a child under the age of 16, we will promptly delete that information.</p>
+                        
+                        <h3 id="changes" data-aos="fade-up">10. Changes to This Privacy Policy</h3>
+                        <p data-aos="fade-up" data-aos-delay="100">We may update this Privacy Policy from time to time. If we make material changes to how we treat our users' personal information, we will notify you by email to the email address specified in your account and/or through a notice on our website. The date the Privacy Policy was last revised is identified at the top of the page. You are responsible for ensuring we have an up-to-date active and deliverable email address for you, and for periodically visiting our website and this Privacy Policy to check for any changes.</p>
+                        
+                        <h3 id="contact" data-aos="fade-up">11. Contact Us</h3>
+                        <div class="privacy-contact-info" data-aos="fade-up" data-aos-delay="100">
+                            <h4>If you have any questions about this Privacy Policy, please contact us at:</h4>
+                            <p>
+                                <strong>NMSWorks Software Limited</strong><br>
+                                123 Technology Park<br>
+                                Electronic City, Bangalore<br>
+                                Karnataka 560100, India<br><br>
+                                <strong>Email:</strong> privacy@nmsworks.com<br>
+                                <strong>Phone:</strong> +91 80 1234 5678
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer py-5">
+        <div class="container">
+            <div class="row g-4">
+                <div class="col-lg-4 col-md-6">
+                    <div class="footer-brand">
+                        <div class="footer-logo">
+                            <img src="https://images.unsplash.com/photo-1560472354-b33ff0c44a43?w=150&h=60&fit=crop&crop=center" alt="NMSWorks">
+                            <span>NMSWorks</span>
+                        </div>
+                        <p>Leading provider of next-generation telecom software solutions, empowering operators worldwide with innovative OSS/BSS platforms.</p>
+                        <div class="social-links">
+                            <a href="#" class="social-link"><i class="fab fa-linkedin"></i></a>
+                            <a href="#" class="social-link"><i class="fab fa-twitter"></i></a>
+                            <a href="#" class="social-link"><i class="fab fa-facebook"></i></a>
+                            <a href="#" class="social-link"><i class="fab fa-youtube"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-2 col-md-6">
+                    <h5>Company</h5>
+                    <ul class="footer-links">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about/people.html">About</a></li>
+                        <li><a href="about/career.html">Career</a></li>
+                        <li><a href="about/news-events.html">News & Events</a></li>
+                        <li><a href="privacy-policy.html">Privacy Policy</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-2 col-md-6">
+                    <h5>Solutions</h5>
+                    <ul class="footer-links">
+                        <li><a href="portfolio/products.html">Products</a></li>
+                        <li><a href="portfolio/solutions.html">Solutions</a></li>
+                        <li><a href="innovation.html">Innovation</a></li>
+                        <li><a href="partners.html">Partners</a></li>
+                        <li><a href="resources.html">Resources</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-4 col-md-6">
+                    <h5>Contact Info</h5>
+                    <div class="contact-info">
+                        <div class="contact-item">
+                            <i class="fas fa-map-marker-alt"></i>
+                            <span>123 Technology Park<br>Electronic City, Bangalore<br>Karnataka 560100, India</span>
+                        </div>
+                        <div class="contact-item">
+                            <i class="fas fa-phone"></i>
+                            <span>+91 80 1234 5678</span>
+                        </div>
+                        <div class="contact-item">
+                            <i class="fas fa-envelope"></i>
+                            <span>info@nmsworks.com</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <hr class="footer-divider">
+            <div class="row">
+                <div class="col-12 text-center">
+                    <p class="copyright">&copy; 2024 NMSWorks. All rights reserved. | Designed with ❤️ for the future of telecom</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Back to Top Button -->
+    <button class="back-to-top" id="backToTop">
+        <i class="fas fa-arrow-up"></i>
+    </button>
+
+    <!-- Scripts -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="./src/main.js"></script>
+</body>
+</html>

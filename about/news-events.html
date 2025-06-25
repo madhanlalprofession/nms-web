@@ -1,0 +1,740 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>News & Events - NMSWorks</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Poppins:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link href="../src/styles.css" rel="stylesheet">
+</head>
+<body class="dark-theme">
+    <!-- Preloader -->
+    <div id="preloader">
+        <div class="preloader-content">
+            <div class="spinner"></div>
+            <h3>Loading NMSWorks</h3>
+        </div>
+    </div>
+
+    <!-- Header -->
+    <nav class="navbar navbar-expand-lg fixed-top" id="mainNav">
+        <div class="container">
+            <a class="navbar-brand" href="../index.html">
+                <div class="logo-container">
+                    <img src="https://images.unsplash.com/photo-1560472354-b33ff0c44a43?w=150&h=60&fit=crop&crop=center" alt="NMSWorks" class="logo">
+                    <span class="logo-text">NMSWorks</span>
+                </div>
+            </a>
+            
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="hamburger-line"></span>
+                <span class="hamburger-line"></span>
+                <span class="hamburger-line"></span>
+            </button>
+            
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">
+                            <i class="fas fa-briefcase me-2"></i>Portfolio
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="../portfolio/products.html"><i class="fas fa-cube me-2"></i>Products</a></li>
+                            <li><a class="dropdown-item" href="../portfolio/solutions.html"><i class="fas fa-lightbulb me-2"></i>Solutions</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="../innovation.html">
+                            <i class="fas fa-rocket me-2"></i>Innovation
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="../partners.html">
+                            <i class="fas fa-handshake me-2"></i>Partners
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="../resources.html">
+                            <i class="fas fa-book me-2"></i>Resources
+                        </a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle active" href="#" role="button" data-bs-toggle="dropdown">
+                            <i class="fas fa-users me-2"></i>About Us
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="people.html"><i class="fas fa-user-friends me-2"></i>People</a></li>
+                            <li><a class="dropdown-item" href="management.html"><i class="fas fa-user-tie me-2"></i>Management</a></li>
+                            <li><a class="dropdown-item active" href="news-events.html"><i class="fas fa-newspaper me-2"></i>News & Events</a></li>
+                            <li><a class="dropdown-item" href="life-at-nmsworks.html"><i class="fas fa-heart me-2"></i>Life at NMSWorks</a></li>
+                            <li><a class="dropdown-item" href="career.html"><i class="fas fa-briefcase me-2"></i>Career</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link contact-btn" href="../contact.html">
+                            <i class="fas fa-envelope me-2"></i>Contact
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Page Hero Section -->
+    <section class="page-hero">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-6">
+                    <div class="hero-content" data-aos="fade-right">
+                        <div class="hero-badge">
+                            <i class="fas fa-newspaper"></i>
+                            <span>Stay Updated</span>
+                        </div>
+                        <h1 class="hero-title">News & <span class="gradient-text">Events</span></h1>
+                        <p class="hero-subtitle">Stay informed about our latest company news, product launches, industry events, and more.</p>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <div class="hero-image" data-aos="fade-left">
+                        <img src="https://images.unsplash.com/photo-1540317580384-e5d43867caa6?w=600&h=400&fit=crop&crop=center" alt="News & Events" class="img-fluid rounded-4 shadow-lg">
+                        <div class="image-overlay"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- News Filter Section -->
+    <section class="news-filter py-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <div class="filter-container" data-aos="fade-up">
+                        <div class="filter-group">
+                            <label>Filter By:</label>
+                            <div class="filter-buttons">
+                                <button class="filter-btn active" data-filter="all">All</button>
+                                <button class="filter-btn" data-filter="company-news">Company News</button>
+                                <button class="filter-btn" data-filter="product-updates">Product Updates</button>
+                                <button class="filter-btn" data-filter="events">Events</button>
+                                <button class="filter-btn" data-filter="awards">Awards</button>
+                            </div>
+                        </div>
+                        <div class="search-group">
+                            <div class="input-group">
+                                <input type="text" class="form-control" placeholder="Search news..." id="newsSearch">
+                                <button class="btn btn-primary" type="button">
+                                    <i class="fas fa-search"></i>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Featured News Section -->
+    <section class="featured-news py-5">
+        <div class="container">
+            <div class="row text-center mb-5">
+                <div class="col-12">
+                    <div class="section-header" data-aos="fade-up">
+                        <span class="section-badge">Featured</span>
+                        <h2 class="section-title">Latest Highlights</h2>
+                        <p class="section-subtitle">Our most recent and noteworthy updates</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row g-4">
+                <div class="col-lg-8" data-aos="fade-up">
+                    <div class="featured-news-card" data-category="company-news">
+                        <div class="featured-news-image">
+                            <img src="https://images.unsplash.com/photo-1573164574572-cb89e39749b4?w=800&h=500&fit=crop&crop=center" alt="Featured News" class="img-fluid">
+                            <div class="news-badge">Company News</div>
+                        </div>
+                        <div class="featured-news-content">
+                            <div class="news-date">
+                                <i class="far fa-calendar-alt"></i>
+                                <span>June 15, 2023</span>
+                            </div>
+                            <h3 class="news-title">NMSWorks Expands Global Presence with New Office in Singapore</h3>
+                            <p class="news-excerpt">We're excited to announce the opening of our new office in Singapore, strengthening our presence in the Asia-Pacific region and enhancing our ability to serve telecom operators across Southeast Asia.</p>
+                            <div class="news-footer">
+                                <a href="#" class="btn btn-outline-primary">Read More</a>
+                                <div class="news-share">
+                                    <span>Share:</span>
+                                    <a href="#"><i class="fab fa-linkedin"></i></a>
+                                    <a href="#"><i class="fab fa-twitter"></i></a>
+                                    <a href="#"><i class="fab fa-facebook"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <div class="row g-4">
+                        <div class="col-12" data-aos="fade-up" data-aos-delay="100">
+                            <div class="news-card-sm" data-category="product-updates">
+                                <div class="news-card-sm-image">
+                                    <img src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=400&h=250&fit=crop&crop=center" alt="Product Update" class="img-fluid">
+                                    <div class="news-badge">Product Update</div>
+                                </div>
+                                <div class="news-card-sm-content">
+                                    <div class="news-date">
+                                        <i class="far fa-calendar-alt"></i>
+                                        <span>May 28, 2023</span>
+                                    </div>
+                                    <h4 class="news-title">NMSWorks Launches NetOps AI 2.0 with Enhanced Predictive Analytics</h4>
+                                    <a href="#" class="read-more">Read More <i class="fas fa-arrow-right"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12" data-aos="fade-up" data-aos-delay="200">
+                            <div class="news-card-sm" data-category="events">
+                                <div class="news-card-sm-image">
+                                    <img src="https://images.unsplash.com/photo-1540575467063-178a50c2df87?w=400&h=250&fit=crop&crop=center" alt="Event" class="img-fluid">
+                                    <div class="news-badge">Event</div>
+                                </div>
+                                <div class="news-card-sm-content">
+                                    <div class="news-date">
+                                        <i class="far fa-calendar-alt"></i>
+                                        <span>July 10-12, 2023</span>
+                                    </div>
+                                    <h4 class="news-title">Join Us at TelecomWorld 2023 in Barcelona</h4>
+                                    <a href="#" class="read-more">Read More <i class="fas fa-arrow-right"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- News Grid Section -->
+    <section class="news-grid py-5 bg-dark-gradient">
+        <div class="container">
+            <div class="row text-center mb-5">
+                <div class="col-12">
+                    <div class="section-header" data-aos="fade-up">
+                        <span class="section-badge">News Archive</span>
+                        <h2 class="section-title">Recent News & Updates</h2>
+                        <p class="section-subtitle">Stay informed about our latest developments</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row g-4" id="newsGrid">
+                <!-- Company News -->
+                <div class="col-lg-4 col-md-6" data-aos="fade-up" data-category="company-news">
+                    <div class="news-card">
+                        <div class="news-image">
+                            <img src="https://images.unsplash.com/photo-1560179707-f14e90ef3623?w=400&h=250&fit=crop&crop=center" alt="Company News" class="img-fluid">
+                            <div class="news-badge">Company News</div>
+                        </div>
+                        <div class="news-content">
+                            <div class="news-date">
+                                <i class="far fa-calendar-alt"></i>
+                                <span>April 20, 2023</span>
+                            </div>
+                            <h4 class="news-title">NMSWorks Celebrates 15 Years of Innovation in Telecom Software</h4>
+                            <p class="news-excerpt">This month marks 15 years since NMSWorks was founded with a mission to transform telecom operations through innovative software solutions.</p>
+                            <a href="#" class="read-more">Read More <i class="fas fa-arrow-right"></i></a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Product Updates -->
+                <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="100" data-category="product-updates">
+                    <div class="news-card">
+                        <div class="news-image">
+                            <img src="https://images.unsplash.com/photo-1563986768609-322da13575f3?w=400&h=250&fit=crop&crop=center" alt="Product Update" class="img-fluid">
+                            <div class="news-badge">Product Update</div>
+                        </div>
+                        <div class="news-content">
+                            <div class="news-date">
+                                <i class="far fa-calendar-alt"></i>
+                                <span>March 15, 2023</span>
+                            </div>
+                            <h4 class="news-title">New Release: TelecomOSS Platform v5.2 with Enhanced Security Features</h4>
+                            <p class="news-excerpt">Our latest release includes advanced security features, improved performance, and new integration capabilities for telecom operators.</p>
+                            <a href="#" class="read-more">Read More <i class="fas fa-arrow-right"></i></a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Events -->
+                <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="200" data-category="events">
+                    <div class="news-card">
+                        <div class="news-image">
+                            <img src="https://images.unsplash.com/photo-1475721027785-f74eccf877e2?w=400&h=250&fit=crop&crop=center" alt="Event" class="img-fluid">
+                            <div class="news-badge">Event</div>
+                        </div>
+                        <div class="news-content">
+                            <div class="news-date">
+                                <i class="far fa-calendar-alt"></i>
+                                <span>May 5-7, 2023</span>
+                            </div>
+                            <h4 class="news-title">NMSWorks to Host Virtual Telecom Innovation Summit 2023</h4>
+                            <p class="news-excerpt">Join us for our annual virtual summit featuring industry experts, product demos, and insights on the future of telecom technology.</p>
+                            <a href="#" class="read-more">Read More <i class="fas fa-arrow-right"></i></a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Awards -->
+                <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="300" data-category="awards">
+                    <div class="news-card">
+                        <div class="news-image">
+                            <img src="https://images.unsplash.com/photo-1531545514256-b1400bc00f31?w=400&h=250&fit=crop&crop=center" alt="Award" class="img-fluid">
+                            <div class="news-badge">Award</div>
+                        </div>
+                        <div class="news-content">
+                            <div class="news-date">
+                                <i class="far fa-calendar-alt"></i>
+                                <span>February 28, 2023</span>
+                            </div>
+                            <h4 class="news-title">NMSWorks Wins "Best OSS Solution" at Telecom Excellence Awards 2023</h4>
+                            <p class="news-excerpt">Our NetOps AI platform has been recognized for its innovative approach to network operations and management at this year's awards.</p>
+                            <a href="#" class="read-more">Read More <i class="fas fa-arrow-right"></i></a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Company News -->
+                <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="400" data-category="company-news">
+                    <div class="news-card">
+                        <div class="news-image">
+                            <img src="https://images.unsplash.com/photo-1600880292089-90a7e086ee0c?w=400&h=250&fit=crop&crop=center" alt="Company News" class="img-fluid">
+                            <div class="news-badge">Company News</div>
+                        </div>
+                        <div class="news-content">
+                            <div class="news-date">
+                                <i class="far fa-calendar-alt"></i>
+                                <span>January 15, 2023</span>
+                            </div>
+                            <h4 class="news-title">NMSWorks Partners with Leading European Telecom Group</h4>
+                            <p class="news-excerpt">We're excited to announce our strategic partnership with one of Europe's largest telecom groups to deploy our OSS solutions across their operations.</p>
+                            <a href="#" class="read-more">Read More <i class="fas fa-arrow-right"></i></a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Product Updates -->
+                <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="500" data-category="product-updates">
+                    <div class="news-card">
+                        <div class="news-image">
+                            <img src="https://images.unsplash.com/photo-1581094794329-c8112a89af12?w=400&h=250&fit=crop&crop=center" alt="Product Update" class="img-fluid">
+                            <div class="news-badge">Product Update</div>
+                        </div>
+                        <div class="news-content">
+                            <div class="news-date">
+                                <i class="far fa-calendar-alt"></i>
+                                <span>December 10, 2022</span>
+                            </div>
+                            <h4 class="news-title">Introducing Our New Mobile Network Analytics Dashboard</h4>
+                            <p class="news-excerpt">Our new analytics dashboard provides real-time insights into mobile network performance, helping operators identify and resolve issues faster.</p>
+                            <a href="#" class="read-more">Read More <i class="fas fa-arrow-right"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row mt-5">
+                <div class="col-12 text-center" data-aos="fade-up">
+                    <button class="btn btn-primary load-more-btn">
+                        <i class="fas fa-sync-alt me-2"></i>Load More News
+                        <span class="btn-shine"></span>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Upcoming Events Section -->
+    <section class="upcoming-events py-5">
+        <div class="container">
+            <div class="row text-center mb-5">
+                <div class="col-12">
+                    <div class="section-header" data-aos="fade-up">
+                        <span class="section-badge">Calendar</span>
+                        <h2 class="section-title">Upcoming Events</h2>
+                        <p class="section-subtitle">Meet us at these industry events and conferences</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row g-4">
+                <div class="col-lg-6" data-aos="fade-up">
+                    <div class="event-card">
+                        <div class="event-date">
+                            <div class="date-box">
+                                <span class="month">JUL</span>
+                                <span class="day">10-12</span>
+                                <span class="year">2023</span>
+                            </div>
+                        </div>
+                        <div class="event-details">
+                            <h4 class="event-title">TelecomWorld 2023</h4>
+                            <div class="event-meta">
+                                <div class="meta-item">
+                                    <i class="fas fa-map-marker-alt"></i>
+                                    <span>Barcelona, Spain</span>
+                                </div>
+                                <div class="meta-item">
+                                    <i class="fas fa-microphone"></i>
+                                    <span>Speaking Session: "AI in Network Operations"</span>
+                                </div>
+                                <div class="meta-item">
+                                    <i class="fas fa-map-pin"></i>
+                                    <span>Booth #A42</span>
+                                </div>
+                            </div>
+                            <p class="event-description">Join us at TelecomWorld 2023, where our CTO Dr. Priya Sharma will present on "AI-Driven Network Operations: The Future of Telecom" and our team will showcase our latest innovations at Booth #A42.</p>
+                            <div class="event-actions">
+                                <a href="#" class="btn btn-outline-primary">Add to Calendar</a>
+                                <a href="#" class="btn btn-primary">Register Now <span class="btn-shine"></span></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-6" data-aos="fade-up" data-aos-delay="100">
+                    <div class="event-card">
+                        <div class="event-date">
+                            <div class="date-box">
+                                <span class="month">AUG</span>
+                                <span class="day">25</span>
+                                <span class="year">2023</span>
+                            </div>
+                        </div>
+                        <div class="event-details">
+                            <h4 class="event-title">5G Innovation Summit</h4>
+                            <div class="event-meta">
+                                <div class="meta-item">
+                                    <i class="fas fa-map-marker-alt"></i>
+                                    <span>Singapore</span>
+                                </div>
+                                <div class="meta-item">
+                                    <i class="fas fa-microphone"></i>
+                                    <span>Panel Discussion: "5G Network Management Challenges"</span>
+                                </div>
+                                <div class="meta-item">
+                                    <i class="fas fa-map-pin"></i>
+                                    <span>Booth #C15</span>
+                                </div>
+                            </div>
+                            <p class="event-description">Our CEO Dr. Rajesh Kumar will participate in a panel discussion on the challenges and opportunities in 5G network management at this premier industry event in Singapore.</p>
+                            <div class="event-actions">
+                                <a href="#" class="btn btn-outline-primary">Add to Calendar</a>
+                                <a href="#" class="btn btn-primary">Register Now <span class="btn-shine"></span></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-6" data-aos="fade-up" data-aos-delay="200">
+                    <div class="event-card">
+                        <div class="event-date">
+                            <div class="date-box">
+                                <span class="month">SEP</span>
+                                <span class="day">15</span>
+                                <span class="year">2023</span>
+                            </div>
+                        </div>
+                        <div class="event-details">
+                            <h4 class="event-title">NMSWorks Virtual Product Launch</h4>
+                            <div class="event-meta">
+                                <div class="meta-item">
+                                    <i class="fas fa-globe"></i>
+                                    <span>Online Event</span>
+                                </div>
+                                <div class="meta-item">
+                                    <i class="fas fa-clock"></i>
+                                    <span>10:00 AM - 12:00 PM EST</span>
+                                </div>
+                            </div>
+                            <p class="event-description">Join us for the virtual launch of our next-generation OSS platform, featuring live demos, Q&A sessions with our product team, and special launch offers for attendees.</p>
+                            <div class="event-actions">
+                                <a href="#" class="btn btn-outline-primary">Add to Calendar</a>
+                                <a href="#" class="btn btn-primary">Register Now <span class="btn-shine"></span></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-6" data-aos="fade-up" data-aos-delay="300">
+                    <div class="event-card">
+                        <div class="event-date">
+                            <div class="date-box">
+                                <span class="month">OCT</span>
+                                <span class="day">5-7</span>
+                                <span class="year">2023</span>
+                            </div>
+                        </div>
+                        <div class="event-details">
+                            <h4 class="event-title">Asia Telecom Expo</h4>
+                            <div class="event-meta">
+                                <div class="meta-item">
+                                    <i class="fas fa-map-marker-alt"></i>
+                                    <span>New Delhi, India</span>
+                                </div>
+                                <div class="meta-item">
+                                    <i class="fas fa-microphone"></i>
+                                    <span>Workshop: "Network Automation Best Practices"</span>
+                                </div>
+                                <div class="meta-item">
+                                    <i class="fas fa-map-pin"></i>
+                                    <span>Booth #G22</span>
+                                </div>
+                            </div>
+                            <p class="event-description">Visit us at Asia Telecom Expo where we'll be showcasing our complete portfolio of telecom solutions and hosting a workshop on network automation best practices for telecom operators.</p>
+                            <div class="event-actions">
+                                <a href="#" class="btn btn-outline-primary">Add to Calendar</a>
+                                <a href="#" class="btn btn-primary">Register Now <span class="btn-shine"></span></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Press Kit Section -->
+    <section class="press-kit py-5 bg-dark-gradient">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-6" data-aos="fade-right">
+                    <div class="press-content">
+                        <span class="section-badge">Media Resources</span>
+                        <h2 class="section-title">Press Kit & Media Inquiries</h2>
+                        <p>We provide resources for media professionals covering NMSWorks and our solutions. Our press kit includes company information, executive bios, product details, high-resolution images, and more.</p>
+                        
+                        <div class="press-resources">
+                            <div class="resource-item">
+                                <div class="resource-icon">
+                                    <i class="fas fa-file-alt"></i>
+                                </div>
+                                <div class="resource-details">
+                                    <h5>Company Fact Sheet</h5>
+                                    <p>Key information about NMSWorks, our history, and our solutions.</p>
+                                    <a href="#" class="download-link">Download PDF <i class="fas fa-download"></i></a>
+                                </div>
+                            </div>
+                            <div class="resource-item">
+                                <div class="resource-icon">
+                                    <i class="fas fa-images"></i>
+                                </div>
+                                <div class="resource-details">
+                                    <h5>Brand Assets</h5>
+                                    <p>Logos, product images, and executive headshots for media use.</p>
+                                    <a href="#" class="download-link">Download ZIP <i class="fas fa-download"></i></a>
+                                </div>
+                            </div>
+                            <div class="resource-item">
+                                <div class="resource-icon">
+                                    <i class="fas fa-newspaper"></i>
+                                </div>
+                                <div class="resource-details">
+                                    <h5>Press Releases</h5>
+                                    <p>Archive of our recent press releases and announcements.</p>
+                                    <a href="#" class="download-link">View Archive <i class="fas fa-arrow-right"></i></a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="media-contact mt-4">
+                            <h5>Media Contact</h5>
+                            <p>For press inquiries, please contact our PR team:</p>
+                            <div class="contact-details">
+                                <div class="contact-item">
+                                    <i class="fas fa-user"></i>
+                                    <span>Sarah Johnson, PR Manager</span>
+                                </div>
+                                <div class="contact-item">
+                                    <i class="fas fa-envelope"></i>
+                                    <span>press@nmsworks.com</span>
+                                </div>
+                                <div class="contact-item">
+                                    <i class="fas fa-phone"></i>
+                                    <span>+91 44 1234 5679</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6" data-aos="fade-left">
+                    <div class="press-image">
+                        <img src="https://images.unsplash.com/photo-1557804506-669a67965ba0?w=600&h=400&fit=crop&crop=center" alt="Press Kit" class="img-fluid rounded-4 shadow-lg">
+                        <div class="image-overlay"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Newsletter Section -->
+    <section class="newsletter py-5">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-lg-8 text-center">
+                    <div class="newsletter-content" data-aos="fade-up">
+                        <span class="section-badge">Stay Updated</span>
+                        <h2 class="section-title">Subscribe to Our Newsletter</h2>
+                        <p class="section-subtitle">Get the latest news, event updates, and insights delivered directly to your inbox.</p>
+                        
+                        <form class="newsletter-form mt-4">
+                            <div class="input-group">
+                                <input type="email" class="form-control" placeholder="Your email address" required>
+                                <button class="btn btn-primary" type="submit">
+                                    Subscribe
+                                    <span class="btn-shine"></span>
+                                </button>
+                            </div>
+                            <div class="form-check mt-2 text-start">
+                                <input class="form-check-input" type="checkbox" id="privacyCheck" required>
+                                <label class="form-check-label" for="privacyCheck">
+                                    I agree to receive news and updates according to the <a href="#">Privacy Policy</a>
+                                </label>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer py-5">
+        <div class="container">
+            <div class="row g-4">
+                <div class="col-lg-4">
+                    <div class="footer-brand">
+                        <img src="https://images.unsplash.com/photo-1560472354-b33ff0c44a43?w=150&h=60&fit=crop&crop=center" alt="NMSWorks" class="footer-logo">
+                        <h4 class="mt-3">NMSWorks Software</h4>
+                        <p>Leading provider of telecom software solutions, serving operators worldwide with innovative OSS/BSS platforms and network management systems.</p>
+                        <div class="social-links">
+                            <a href="#" class="social-link"><i class="fab fa-linkedin"></i></a>
+                            <a href="#" class="social-link"><i class="fab fa-twitter"></i></a>
+                            <a href="#" class="social-link"><i class="fab fa-facebook"></i></a>
+                            <a href="#" class="social-link"><i class="fab fa-youtube"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-2 col-md-4">
+                    <h5 class="footer-title">Company</h5>
+                    <ul class="footer-links">
+                        <li><a href="people.html">People</a></li>
+                        <li><a href="management.html">Management</a></li>
+                        <li><a href="news-events.html">News & Events</a></li>
+                        <li><a href="life-at-nmsworks.html">Life at NMSWorks</a></li>
+                        <li><a href="career.html">Career</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-2 col-md-4">
+                    <h5 class="footer-title">Solutions</h5>
+                    <ul class="footer-links">
+                        <li><a href="../portfolio/products.html">Products</a></li>
+                        <li><a href="../portfolio/solutions.html">Solutions</a></li>
+                        <li><a href="../innovation.html">Innovation</a></li>
+                        <li><a href="../partners.html">Partners</a></li>
+                        <li><a href="../resources.html">Resources</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-4 col-md-4">
+                    <h5 class="footer-title">Contact</h5>
+                    <ul class="footer-contact">
+                        <li>
+                            <i class="fas fa-map-marker-alt"></i>
+                            <span>123 Tech Park, Innovation Street, Chennai, India 600001</span>
+                        </li>
+                        <li>
+                            <i class="fas fa-phone"></i>
+                            <span>+91 44 1234 5678</span>
+                        </li>
+                        <li>
+                            <i class="fas fa-envelope"></i>
+                            <span>info@nmsworks.com</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <div class="row">
+                    <div class="col-md-6">
+                        <p class="copyright">© 2023 NMSWorks Software. All rights reserved.</p>
+                    </div>
+                    <div class="col-md-6 text-md-end">
+                        <ul class="footer-bottom-links">
+                            <li><a href="#">Privacy Policy</a></li>
+                            <li><a href="#">Terms of Service</a></li>
+                            <li><a href="#">Sitemap</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Back to Top Button -->
+    <button id="backToTop" class="back-to-top">
+        <i class="fas fa-arrow-up"></i>
+    </button>
+
+    <!-- Scripts -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="../src/main.js"></script>
+    
+    <!-- News Filter Script -->
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            // Filter functionality
+            const filterButtons = document.querySelectorAll('.filter-btn');
+            const newsItems = document.querySelectorAll('[data-category]');
+            
+            filterButtons.forEach(button => {
+                button.addEventListener('click', function() {
+                    const filter = this.getAttribute('data-filter');
+                    
+                    // Update active button
+                    filterButtons.forEach(btn => btn.classList.remove('active'));
+                    this.classList.add('active');
+                    
+                    // Filter news items
+                    newsItems.forEach(item => {
+                        if (filter === 'all' || item.getAttribute('data-category') === filter) {
+                            item.style.display = '';
+                        } else {
+                            item.style.display = 'none';
+                        }
+                    });
+                });
+            });
+            
+            // Search functionality
+            const searchInput = document.getElementById('newsSearch');
+            
+            searchInput.addEventListener('keyup', function() {
+                const searchTerm = this.value.toLowerCase();
+                
+                newsItems.forEach(item => {
+                    const title = item.querySelector('.news-title').textContent.toLowerCase();
+                    const excerpt = item.querySelector('.news-excerpt')?.textContent.toLowerCase() || '';
+                    
+                    if (title.includes(searchTerm) || excerpt.includes(searchTerm)) {
+                        item.style.display = '';
+                    } else {
+                        item.style.display = 'none';
+                    }
+                });
+            });
+        });
+    </script>
+</body>
+</html>

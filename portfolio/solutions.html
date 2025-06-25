@@ -1,0 +1,478 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Solutions - NMSWorks</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Poppins:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link href="../src/styles.css" rel="stylesheet">
+</head>
+<body class="dark-theme">
+    <!-- Preloader -->
+    <div id="preloader">
+        <div class="preloader-content">
+            <div class="spinner"></div>
+            <h3>Loading NMSWorks</h3>
+        </div>
+    </div>
+
+    <!-- Header -->
+    <nav class="navbar navbar-expand-lg fixed-top" id="mainNav">
+        <div class="container">
+            <a class="navbar-brand" href="../index.html">
+                <div class="logo-container">
+                    <img src="https://images.unsplash.com/photo-1560472354-b33ff0c44a43?w=150&h=60&fit=crop&crop=center" alt="NMSWorks" class="logo">
+                    <span class="logo-text">NMSWorks</span>
+                </div>
+            </a>
+            
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="hamburger-line"></span>
+                <span class="hamburger-line"></span>
+                <span class="hamburger-line"></span>
+            </button>
+            
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle active" href="#" role="button" data-bs-toggle="dropdown">
+                            <i class="fas fa-briefcase me-2"></i>Portfolio
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="products.html"><i class="fas fa-cube me-2"></i>Products</a></li>
+                            <li><a class="dropdown-item active" href="solutions.html"><i class="fas fa-lightbulb me-2"></i>Solutions</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="../innovation.html">
+                            <i class="fas fa-rocket me-2"></i>Innovation
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="../partners.html">
+                            <i class="fas fa-handshake me-2"></i>Partners
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="../resources.html">
+                            <i class="fas fa-book me-2"></i>Resources
+                        </a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">
+                            <i class="fas fa-users me-2"></i>About Us
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="../about/people.html"><i class="fas fa-user-friends me-2"></i>People</a></li>
+                            <li><a class="dropdown-item" href="../about/management.html"><i class="fas fa-user-tie me-2"></i>Management</a></li>
+                            <li><a class="dropdown-item" href="../about/news-events.html"><i class="fas fa-newspaper me-2"></i>News & Events</a></li>
+                            <li><a class="dropdown-item" href="../about/life-at-nmsworks.html"><i class="fas fa-heart me-2"></i>Life at NMSWorks</a></li>
+                            <li><a class="dropdown-item" href="../about/career.html"><i class="fas fa-briefcase me-2"></i>Career</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link contact-btn" href="../contact.html">
+                            <i class="fas fa-envelope me-2"></i>Contact
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Page Hero Section -->
+    <section class="page-hero">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-6">
+                    <div class="hero-content" data-aos="fade-right">
+                        <div class="hero-badge">
+                            <i class="fas fa-lightbulb"></i>
+                            <span>Innovative Solutions</span>
+                        </div>
+                        <h1 class="hero-title">Tailored Telecom <span class="gradient-text">Solutions</span></h1>
+                        <p class="hero-subtitle">Comprehensive end-to-end solutions designed to address specific industry challenges and drive digital transformation.</p>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <div class="hero-image" data-aos="fade-left">
+                        <img src="https://images.unsplash.com/photo-1519389950473-47ba0277781c?w=600&h=400&fit=crop&crop=center" alt="Telecom Solutions" class="img-fluid rounded-4 shadow-lg">
+                        <div class="image-overlay"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Solutions Section -->
+    <section class="solutions-section py-5">
+        <div class="container">
+            <div class="row text-center mb-5">
+                <div class="col-12">
+                    <div class="section-header" data-aos="fade-up">
+                        <span class="section-badge">Our Solutions</span>
+                        <h2 class="section-title">Industry-Specific Solutions</h2>
+                        <p class="section-subtitle">Tailored approaches to solve complex telecom challenges</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Telecom Operator Solutions -->
+            <div class="solution-category mb-5" data-aos="fade-up">
+                <h3 class="category-title"><i class="fas fa-broadcast-tower me-2"></i>Telecom Operator Solutions</h3>
+                <div class="row g-4">
+                    <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="100">
+                        <div class="solution-card">
+                            <div class="card-icon">
+                                <i class="fas fa-network-wired"></i>
+                            </div>
+                            <h4>Network Performance Management</h4>
+                            <p>End-to-end visibility and management of network performance with real-time monitoring and analytics.</p>
+                            <ul class="feature-list">
+                                <li><i class="fas fa-check-circle"></i> Real-time network monitoring</li>
+                                <li><i class="fas fa-check-circle"></i> Performance analytics</li>
+                                <li><i class="fas fa-check-circle"></i> Automated issue detection</li>
+                            </ul>
+                            <a href="#" class="btn btn-outline-primary">Learn More</a>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="200">
+                        <div class="solution-card">
+                            <div class="card-icon">
+                                <i class="fas fa-chart-line"></i>
+                            </div>
+                            <h4>Revenue Assurance</h4>
+                            <p>Comprehensive solutions to identify revenue leakage, optimize billing processes, and maximize profitability.</p>
+                            <ul class="feature-list">
+                                <li><i class="fas fa-check-circle"></i> Leakage detection</li>
+                                <li><i class="fas fa-check-circle"></i> Billing verification</li>
+                                <li><i class="fas fa-check-circle"></i> Revenue optimization</li>
+                            </ul>
+                            <a href="#" class="btn btn-outline-primary">Learn More</a>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="300">
+                        <div class="solution-card">
+                            <div class="card-icon">
+                                <i class="fas fa-users-cog"></i>
+                            </div>
+                            <h4>Customer Experience Management</h4>
+                            <p>Solutions to monitor, analyze and enhance the end-to-end customer experience across all touchpoints.</p>
+                            <ul class="feature-list">
+                                <li><i class="fas fa-check-circle"></i> Experience monitoring</li>
+                                <li><i class="fas fa-check-circle"></i> Sentiment analysis</li>
+                                <li><i class="fas fa-check-circle"></i> Service quality optimization</li>
+                            </ul>
+                            <a href="#" class="btn btn-outline-primary">Learn More</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Enterprise Solutions -->
+            <div class="solution-category mb-5" data-aos="fade-up">
+                <h3 class="category-title"><i class="fas fa-building me-2"></i>Enterprise Solutions</h3>
+                <div class="row g-4">
+                    <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="100">
+                        <div class="solution-card">
+                            <div class="card-icon">
+                                <i class="fas fa-shield-alt"></i>
+                            </div>
+                            <h4>Enterprise Security</h4>
+                            <p>Comprehensive security solutions to protect enterprise networks, data, and applications from threats.</p>
+                            <ul class="feature-list">
+                                <li><i class="fas fa-check-circle"></i> Threat detection</li>
+                                <li><i class="fas fa-check-circle"></i> Data protection</li>
+                                <li><i class="fas fa-check-circle"></i> Compliance management</li>
+                            </ul>
+                            <a href="#" class="btn btn-outline-primary">Learn More</a>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="200">
+                        <div class="solution-card">
+                            <div class="card-icon">
+                                <i class="fas fa-cloud"></i>
+                            </div>
+                            <h4>Cloud Transformation</h4>
+                            <p>Solutions to help enterprises migrate to cloud infrastructure and optimize cloud operations.</p>
+                            <ul class="feature-list">
+                                <li><i class="fas fa-check-circle"></i> Cloud migration</li>
+                                <li><i class="fas fa-check-circle"></i> Hybrid cloud management</li>
+                                <li><i class="fas fa-check-circle"></i> Cloud optimization</li>
+                            </ul>
+                            <a href="#" class="btn btn-outline-primary">Learn More</a>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="300">
+                        <div class="solution-card">
+                            <div class="card-icon">
+                                <i class="fas fa-project-diagram"></i>
+                            </div>
+                            <h4>Digital Workplace</h4>
+                            <p>Solutions to create a connected, collaborative, and productive digital workplace environment.</p>
+                            <ul class="feature-list">
+                                <li><i class="fas fa-check-circle"></i> Collaboration tools</li>
+                                <li><i class="fas fa-check-circle"></i> Productivity solutions</li>
+                                <li><i class="fas fa-check-circle"></i> Remote work enablement</li>
+                            </ul>
+                            <a href="#" class="btn btn-outline-primary">Learn More</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Industry-Specific Solutions -->
+            <div class="solution-category" data-aos="fade-up">
+                <h3 class="category-title"><i class="fas fa-industry me-2"></i>Industry-Specific Solutions</h3>
+                <div class="row g-4">
+                    <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="100">
+                        <div class="solution-card">
+                            <div class="card-icon">
+                                <i class="fas fa-hospital"></i>
+                            </div>
+                            <h4>Healthcare Connectivity</h4>
+                            <p>Specialized solutions for healthcare providers to ensure reliable and secure connectivity for critical services.</p>
+                            <ul class="feature-list">
+                                <li><i class="fas fa-check-circle"></i> Medical device connectivity</li>
+                                <li><i class="fas fa-check-circle"></i> Telemedicine infrastructure</li>
+                                <li><i class="fas fa-check-circle"></i> Healthcare data security</li>
+                            </ul>
+                            <a href="#" class="btn btn-outline-primary">Learn More</a>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="200">
+                        <div class="solution-card">
+                            <div class="card-icon">
+                                <i class="fas fa-university"></i>
+                            </div>
+                            <h4>Financial Services</h4>
+                            <p>Secure and reliable solutions for financial institutions to support digital banking and financial operations.</p>
+                            <ul class="feature-list">
+                                <li><i class="fas fa-check-circle"></i> Transaction security</li>
+                                <li><i class="fas fa-check-circle"></i> Fraud detection</li>
+                                <li><i class="fas fa-check-circle"></i> Regulatory compliance</li>
+                            </ul>
+                            <a href="#" class="btn btn-outline-primary">Learn More</a>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="300">
+                        <div class="solution-card">
+                            <div class="card-icon">
+                                <i class="fas fa-shopping-cart"></i>
+                            </div>
+                            <h4>Retail Connectivity</h4>
+                            <p>Solutions to enable seamless connectivity for retail operations, point-of-sale systems, and customer experiences.</p>
+                            <ul class="feature-list">
+                                <li><i class="fas fa-check-circle"></i> In-store connectivity</li>
+                                <li><i class="fas fa-check-circle"></i> Inventory management</li>
+                                <li><i class="fas fa-check-circle"></i> Customer analytics</li>
+                            </ul>
+                            <a href="#" class="btn btn-outline-primary">Learn More</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Case Studies Section -->
+    <section class="case-studies-section py-5 bg-dark-gradient">
+        <div class="container">
+            <div class="row text-center mb-5">
+                <div class="col-12">
+                    <div class="section-header" data-aos="fade-up">
+                        <span class="section-badge">Success Stories</span>
+                        <h2 class="section-title">Case Studies</h2>
+                        <p class="section-subtitle">Real-world examples of our solutions in action</p>
+                    </div>
+                </div>
+            </div>
+            <div class="row g-4">
+                <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="100">
+                    <div class="case-study-card">
+                        <div class="case-image">
+                            <img src="https://images.unsplash.com/photo-1573164713988-8665fc963095?w=400&h=250&fit=crop&crop=center" alt="Telecom Operator Case Study" class="img-fluid">
+                            <div class="case-overlay">
+                                <span>Telecom</span>
+                            </div>
+                        </div>
+                        <div class="case-content">
+                            <h4>Network Optimization for Major Telecom</h4>
+                            <p>How we helped a leading telecom operator improve network performance by 40% and reduce operational costs.</p>
+                            <div class="case-stats">
+                                <div class="stat">
+                                    <span class="stat-value">40%</span>
+                                    <span class="stat-label">Performance Increase</span>
+                                </div>
+                                <div class="stat">
+                                    <span class="stat-value">30%</span>
+                                    <span class="stat-label">Cost Reduction</span>
+                                </div>
+                            </div>
+                            <a href="#" class="btn btn-sm btn-primary">Read Case Study</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="200">
+                    <div class="case-study-card">
+                        <div class="case-image">
+                            <img src="https://images.unsplash.com/photo-1563986768609-322da13575f3?w=400&h=250&fit=crop&crop=center" alt="Healthcare Case Study" class="img-fluid">
+                            <div class="case-overlay">
+                                <span>Healthcare</span>
+                            </div>
+                        </div>
+                        <div class="case-content">
+                            <h4>Secure Connectivity for Hospital Network</h4>
+                            <p>Implementing secure and reliable connectivity solutions for a network of hospitals across multiple locations.</p>
+                            <div class="case-stats">
+                                <div class="stat">
+                                    <span class="stat-value">99.9%</span>
+                                    <span class="stat-label">Uptime</span>
+                                </div>
+                                <div class="stat">
+                                    <span class="stat-value">100%</span>
+                                    <span class="stat-label">HIPAA Compliance</span>
+                                </div>
+                            </div>
+                            <a href="#" class="btn btn-sm btn-primary">Read Case Study</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="300">
+                    <div class="case-study-card">
+                        <div class="case-image">
+                            <img src="https://images.unsplash.com/photo-1556742031-c6961e8560b0?w=400&h=250&fit=crop&crop=center" alt="Financial Services Case Study" class="img-fluid">
+                            <div class="case-overlay">
+                                <span>Finance</span>
+                            </div>
+                        </div>
+                        <div class="case-content">
+                            <h4>Digital Transformation for Banking</h4>
+                            <p>Enabling digital transformation for a leading bank with secure and scalable infrastructure solutions.</p>
+                            <div class="case-stats">
+                                <div class="stat">
+                                    <span class="stat-value">50%</span>
+                                    <span class="stat-label">Faster Transactions</span>
+                                </div>
+                                <div class="stat">
+                                    <span class="stat-value">60%</span>
+                                    <span class="stat-label">Digital Adoption</span>
+                                </div>
+                            </div>
+                            <a href="#" class="btn btn-sm btn-primary">Read Case Study</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="cta-section py-5">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-lg-10">
+                    <div class="cta-content text-center" data-aos="fade-up">
+                        <h2>Ready to Transform Your Business?</h2>
+                        <p>Contact our solutions experts to discuss how we can address your specific challenges.</p>
+                        <div class="cta-buttons">
+                            <a href="../contact.html" class="btn btn-primary btn-lg me-3">
+                                <i class="fas fa-envelope me-2"></i>Contact Us
+                                <span class="btn-shine"></span>
+                            </a>
+                            <a href="#" class="btn btn-outline-primary btn-lg">
+                                <i class="fas fa-calendar me-2"></i>Schedule Demo
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer py-5">
+        <div class="container">
+            <div class="row g-4">
+                <div class="col-lg-4">
+                    <div class="footer-brand">
+                        <img src="https://images.unsplash.com/photo-1560472354-b33ff0c44a43?w=150&h=60&fit=crop&crop=center" alt="NMSWorks" class="footer-logo">
+                        <h4 class="mt-3">NMSWorks Software</h4>
+                        <p>Leading provider of telecom software solutions, serving operators worldwide with innovative OSS/BSS platforms and network management systems.</p>
+                        <div class="social-links">
+                            <a href="#" class="social-link"><i class="fab fa-linkedin"></i></a>
+                            <a href="#" class="social-link"><i class="fab fa-twitter"></i></a>
+                            <a href="#" class="social-link"><i class="fab fa-facebook"></i></a>
+                            <a href="#" class="social-link"><i class="fab fa-youtube"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-2 col-md-4">
+                    <h5 class="footer-title">Company</h5>
+                    <ul class="footer-links">
+                        <li><a href="../about/people.html">People</a></li>
+                        <li><a href="../about/management.html">Management</a></li>
+                        <li><a href="../about/news-events.html">News & Events</a></li>
+                        <li><a href="../about/life-at-nmsworks.html">Life at NMSWorks</a></li>
+                        <li><a href="../about/career.html">Career</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-2 col-md-4">
+                    <h5 class="footer-title">Solutions</h5>
+                    <ul class="footer-links">
+                        <li><a href="products.html">Products</a></li>
+                        <li><a href="solutions.html">Solutions</a></li>
+                        <li><a href="../innovation.html">Innovation</a></li>
+                        <li><a href="../partners.html">Partners</a></li>
+                        <li><a href="../resources.html">Resources</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-4 col-md-4">
+                    <h5 class="footer-title">Contact</h5>
+                    <ul class="footer-contact">
+                        <li>
+                            <i class="fas fa-map-marker-alt"></i>
+                            <span>123 Tech Park, Innovation Street, Chennai, India 600001</span>
+                        </li>
+                        <li>
+                            <i class="fas fa-phone"></i>
+                            <span>+91 44 1234 5678</span>
+                        </li>
+                        <li>
+                            <i class="fas fa-envelope"></i>
+                            <span>info@nmsworks.com</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <div class="row">
+                    <div class="col-md-6">
+                        <p class="copyright">© 2023 NMSWorks Software. All rights reserved.</p>
+                    </div>
+                    <div class="col-md-6 text-md-end">
+                        <ul class="footer-bottom-links">
+                            <li><a href="#">Privacy Policy</a></li>
+                            <li><a href="#">Terms of Service</a></li>
+                            <li><a href="#">Sitemap</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Back to Top Button -->
+    <button id="backToTop" class="back-to-top">
+        <i class="fas fa-arrow-up"></i>
+    </button>
+
+    <!-- Scripts -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="../src/main.js"></script>
+</body>
+</html>
