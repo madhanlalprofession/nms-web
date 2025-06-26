@@ -11,132 +11,132 @@
     <link href="./src/styles.css" rel="stylesheet">
 </head>
 <body class="dark-theme">
-    <!-- Preloader -->
-    <div id="preloader">
-        <div class="preloader-content">
-            <div class="spinner"></div>
-            <h3>Loading NMSWorks</h3>
+<!-- Preloader -->
+<div id="preloader">
+    <div class="preloader-content">
+        <div class="spinner"></div>
+        <h3>Loading NMSWorks</h3>
+    </div>
+</div>
+
+<!-- Header -->
+<nav class="navbar navbar-expand-lg fixed-top" id="mainNav">
+    <div class="container">
+        <a class="navbar-brand" href="#home">
+            <div class="logo-container">
+                <img src="nms_logo.png" alt="NMSWorks" class="logo">
+                <span class="logo-text">NMSWorks</span>
+            </div>
+        </a>
+
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+            <span class="hamburger-line"></span>
+            <span class="hamburger-line"></span>
+            <span class="hamburger-line"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ms-auto">
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">
+                        <i class="fas fa-briefcase me-2"></i>Portfolio
+                    </a>
+                    <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="portfolio/products.html"><i class="fas fa-cube me-2"></i>Products</a></li>
+                        <li><a class="dropdown-item" href="portfolio/solutions.html"><i class="fas fa-lightbulb me-2"></i>Solutions</a></li>
+                    </ul>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="innovation.html">
+                        <i class="fas fa-rocket me-2"></i>Innovation
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="partners.html">
+                        <i class="fas fa-handshake me-2"></i>Partners
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="resources.html">
+                        <i class="fas fa-book me-2"></i>Resources
+                    </a>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">
+                        <i class="fas fa-users me-2"></i>About Us
+                    </a>
+                    <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="about/people.html"><i class="fas fa-user-friends me-2"></i>People</a></li>
+                        <li><a class="dropdown-item" href="about/management.html"><i class="fas fa-user-tie me-2"></i>Management</a></li>
+                        <li><a class="dropdown-item" href="about/news-events.html"><i class="fas fa-newspaper me-2"></i>News & Events</a></li>
+                        <li><a class="dropdown-item" href="about/life-at-nmsworks.html"><i class="fas fa-heart me-2"></i>Life at NMSWorks</a></li>
+                        <li><a class="dropdown-item" href="about/career.html"><i class="fas fa-briefcase me-2"></i>Career</a></li>
+                    </ul>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link contact-btn" href="contact.html">
+                        <i class="fas fa-envelope me-2"></i>Contact
+                    </a>
+                </li>
+            </ul>
         </div>
     </div>
+</nav>
 
-    <!-- Header -->
-    <nav class="navbar navbar-expand-lg fixed-top" id="mainNav">
-        <div class="container">
-            <a class="navbar-brand" href="#home">
-                <div class="logo-container">
-                    <img src="nms_logo.png" alt="NMSWorks" class="logo">
-                    <span class="logo-text">NMSWorks</span>
-                </div>
-            </a>
-            
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
-                <span class="hamburger-line"></span>
-                <span class="hamburger-line"></span>
-                <span class="hamburger-line"></span>
-            </button>
-            
-            <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav ms-auto">
-                    <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">
-                            <i class="fas fa-briefcase me-2"></i>Portfolio
-                        </a>
-                        <ul class="dropdown-menu">
-                            <li><a class="dropdown-item" href="portfolio/products.html"><i class="fas fa-cube me-2"></i>Products</a></li>
-                            <li><a class="dropdown-item" href="portfolio/solutions.html"><i class="fas fa-lightbulb me-2"></i>Solutions</a></li>
-                        </ul>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="innovation.html">
-                            <i class="fas fa-rocket me-2"></i>Innovation
-                        </a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="partners.html">
-                            <i class="fas fa-handshake me-2"></i>Partners
-                        </a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="resources.html">
-                            <i class="fas fa-book me-2"></i>Resources
-                        </a>
-                    </li>
-                    <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">
-                            <i class="fas fa-users me-2"></i>About Us
-                        </a>
-                        <ul class="dropdown-menu">
-                            <li><a class="dropdown-item" href="about/people.html"><i class="fas fa-user-friends me-2"></i>People</a></li>
-                            <li><a class="dropdown-item" href="about/management.html"><i class="fas fa-user-tie me-2"></i>Management</a></li>
-                            <li><a class="dropdown-item" href="about/news-events.html"><i class="fas fa-newspaper me-2"></i>News & Events</a></li>
-                            <li><a class="dropdown-item" href="about/life-at-nmsworks.html"><i class="fas fa-heart me-2"></i>Life at NMSWorks</a></li>
-                            <li><a class="dropdown-item" href="about/career.html"><i class="fas fa-briefcase me-2"></i>Career</a></li>
-                        </ul>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link contact-btn" href="contact.html">
-                            <i class="fas fa-envelope me-2"></i>Contact
-                        </a>
-                    </li>
-                </ul>
-            </div>
-        </div>
-    </nav>
-
-    <!-- Hero Section with Video Background -->
-    <section id="home" class="hero-section">
-        <div class="video-background">
-            <video autoplay muted loop playsinline controls preload="auto">
-                <source src="201404-915375388_small.mp4" type="video/mp4">
-                Your browser does not support the video tag.
-            </video>
-            <div class="video-overlay"></div>
-        </div>        
-        <div class="container">
-    <div class="row">
-        <div class="col-lg-12">
-            <div class="hero-content text-start" data-aos="fade-right" data-aos-duration="1000">
-                <div class="hero-badge mb-3" data-aos="zoom-in" data-aos-delay="200">
-                    <i class="fas fa-star me-2"></i>
-                    <span>Leading Telecom Solutions</span>
-                </div>
-                <h1 class="hero-title mb-4" data-aos="fade-up" data-aos-delay="400">
-                    Next-Generation <span class="gradient-text">Telecom Software</span> Solutions
-                </h1>
-                <p class="hero-subtitle mb-4" data-aos="fade-up" data-aos-delay="600">
-                    Empowering telecom operators with comprehensive OSS/BSS solutions, 
-                    network management platforms, and innovative automation technologies 
-                    that drive digital transformation.
-                </p>
-                <div class="hero-stats d-flex gap-4 flex-wrap mb-4" data-aos="fade-up" data-aos-delay="800">
-                    <div class="stat-item text-start">
-                        <div class="stat-number h3" data-count="50">0</div>
-                        <div class="stat-label">Global Clients</div>
-                    </div>
-                    <div class="stat-item text-start">
-                        <div class="stat-number h3" data-count="15">0</div>
-                        <div class="stat-label">Years Experience</div>
-                    </div>
-                    <div class="stat-item text-start">
-                        <div class="stat-number h3" data-count="99">0</div>
-                        <div class="stat-label">% Uptime</div>
-                    </div>
-                </div>
-                <div class="hero-buttons" data-aos="fade-up" data-aos-delay="1000">
-                    <a href="portfolio/products.html" class="btn btn-primary btn-lg me-3">
-                        <i class="fas fa-rocket me-2"></i>Explore Products
-                        <span class="btn-shine"></span>
-                    </a>
-                    <a href="contact.html" class="btn btn-outline-primary btn-lg">
-                        <i class="fas fa-phone me-2"></i>Get Started
-                    </a>
-                </div>
-            </div>
-
-            <!-- Hero visuals on left now below -->
-            <div class="hero-visual mt-5" data-aos="fade-left" data-aos-duration="1000" 
-        </div>
+<!-- Hero Section with Video Background -->
+<section id="home" class="hero-section">
+    <div class="video-background">
+        <video autoplay muted loop playsinline controls preload="auto">
+            <source src="201404-915375388_small.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+        <div class="video-overlay"></div>
     </div>
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-12">
+                <div class="hero-content text-start" data-aos="fade-right" data-aos-duration="1000">
+                    <div class="hero-badge mb-3" data-aos="zoom-in" data-aos-delay="200">
+                        <i class="fas fa-star me-2"></i>
+                        <span>Leading Telecom Solutions</span>
+                    </div>
+                    <h1 class="hero-title mb-4" data-aos="fade-up" data-aos-delay="400">
+                        Next-Generation <span class="gradient-text">Telecom Software</span> Solutions
+                    </h1>
+                    <p class="hero-subtitle mb-4" data-aos="fade-up" data-aos-delay="600">
+                        Empowering telecom operators with comprehensive OSS/BSS solutions,
+                        network management platforms, and innovative automation technologies
+                        that drive digital transformation.
+                    </p>
+                    <div class="hero-stats d-flex gap-4 flex-wrap mb-4" data-aos="fade-up" data-aos-delay="800">
+                        <div class="stat-item text-start">
+                            <div class="stat-number h3" data-count="50">0</div>
+                            <div class="stat-label">Global Clients</div>
+                        </div>
+                        <div class="stat-item text-start">
+                            <div class="stat-number h3" data-count="15">0</div>
+                            <div class="stat-label">Years Experience</div>
+                        </div>
+                        <div class="stat-item text-start">
+                            <div class="stat-number h3" data-count="99">0</div>
+                            <div class="stat-label">% Uptime</div>
+                        </div>
+                    </div>
+                    <div class="hero-buttons" data-aos="fade-up" data-aos-delay="1000">
+                        <a href="portfolio/products.html" class="btn btn-primary btn-lg me-3">
+                            <i class="fas fa-rocket me-2"></i>Explore Products
+                            <span class="btn-shine"></span>
+                        </a>
+                        <a href="contact.html" class="btn btn-outline-primary btn-lg">
+                            <i class="fas fa-phone me-2"></i>Get Started
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Hero visuals on left now below -->
+                <div class="hero-visual mt-5" data-aos="fade-left" data-aos-duration="1000"></div>
+            </div>
+        </div>
      <div class="floating-particles">
             <div class="particle"></div>
             <div class="particle"></div>
@@ -145,7 +145,7 @@
             <div class="particle"></div>
         </div>
 </div>
-        
+
         <div class="scroll-indicator" data-aos="fade-up" data-aos-delay="2000">
             <div class="scroll-mouse">
                 <div class="scroll-wheel"></div>
@@ -591,7 +591,7 @@
             <hr class="footer-divider">
             <div class="row">
                 <div class="col-12 text-center">
-                    <p class="copyright">&copy; 2024 NMSWorks. All rights reserved. | Designed with ❤️ for the future of telecom</p>
+                    <p class="copyright">&copy; 2024 NMSWorks. All rights reserved.</p>
                 </div>
             </div>
         </div>
