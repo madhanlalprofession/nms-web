@@ -217,7 +217,7 @@ function setupFormValidation() {
                 const originalText = submitBtn.innerHTML;
                 
                 // Loading animation
-                submitBtn.innerHTML = '<span class="loading"></span> Sending...';
+                submitBtn.innerHTML = 'Loading...';
                 submitBtn.disabled = true;
                 
                 // Simulate form submission
