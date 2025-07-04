@@ -1027,7 +1027,6 @@ section {
     animation: scroll 30s linear infinite;
     width: calc(300px * 18);
 }
-
 .client-logo {
     flex: 0 0 300px;
     display: flex;
@@ -1035,7 +1034,7 @@ section {
     align-items: center;
     justify-content: center;
     padding: 2rem 1rem;
-    background: var(--card-bg);
+    background-color: #f8f8ff; /* <-- Fixed */
     border: 1px solid var(--border-color);
     margin: 0 1rem;
     border-radius: 15px;
@@ -1044,10 +1043,10 @@ section {
     overflow: hidden;
 }
 
+
 .client-logo:hover {
     transform: translateY(-10px);
     box-shadow: 0 20px 40px var(--shadow-dark);
-    border-color: var(--accent-blue);
 }
 
 .client-logo img {
