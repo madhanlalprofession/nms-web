@@ -10,7 +10,59 @@
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link href="./src/styles.css" rel="stylesheet">
     <link rel="icon" href="nms_logo.png" type="image/png">
+    <style>
+        /* Override conflicting body styles */
+        body {
+            margin: 0;
+            padding-top: 70px; /* Adjust based on navbar height */
+            display: block; /* Remove flex to avoid centering */
+            min-height: 100vh;
+            font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+            color: rgba(255, 255, 255, 0.87);
+            background-color: #242424;
+        }
 
+        /* Ensure navbar is sticky */
+        #mainNav {
+            background-color: #fff;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            z-index: 1030; /* Ensure navbar stays above other content */
+        }
+
+        /* Hamburger lines styling */
+        .hamburger-line {
+            display: block;
+            width: 25px;
+            height: 3px;
+            margin: 5px auto;
+            background-color: #333;
+        }
+
+        /* Dropdown menu positioning */
+        .dropdown-menu {
+            position: absolute;
+            z-index: 1000;
+        }
+
+        /* Optional: Ensure content is not centered vertically */
+        #app {
+            max-width: 1280px;
+            margin: 0 auto;
+            padding: 2rem;
+            text-align: center;
+        }
+
+        /* Dark theme adjustments */
+        @media (prefers-color-scheme: light) {
+            body {
+                color: #213547;
+                background-color: #ffffff;
+            }
+            #mainNav {
+                background-color: #f9f9f9;
+            }
+        }
+    </style>
 </head>
 <body class="dark-theme">
 <!-- Preloader -->
@@ -85,7 +137,7 @@
     </div>
 </nav>
 
-<!-- Hero Section with Video Background -->
+
 <section id="home" class="hero-section">
     <div class="video-background">
         <video autoplay muted loop playsinline preload="auto">
@@ -134,479 +186,490 @@
                         </a>
                     </div>
                 </div>
-
-                <!-- Hero visuals on left now below -->
                 <div class="hero-visual mt-5" data-aos="fade-left" data-aos-duration="1000"></div>
             </div>
         </div>
-     <div class="floating-particles">
+        <div class="floating-particles">
             <div class="particle"></div>
             <div class="particle"></div>
             <div class="particle"></div>
             <div class="particle"></div>
             <div class="particle"></div>
         </div>
-</div>
-
         <div class="scroll-indicator" data-aos="fade-up" data-aos-delay="2000">
             <div class="scroll-mouse">
                 <div class="scroll-wheel"></div>
             </div>
             <span>Scroll to explore</span>
         </div>
-    </section>
+    </div>
+</section>
 
-    <!-- NMS Advantage Section -->
-    <section class="nms-advantage py-5">
-        <div class="container">
-            <div class="row text-center mb-5">
-                <div class="col-12">
-                    <div class="section-header" data-aos="fade-up">
-                        <span class="section-badge">Why Choose Us</span>
-                        <h2 class="section-title">The NMS Advantage</h2>
-                        <p class="section-subtitle">Delivering excellence through innovation, expertise, and comprehensive solutions</p>
+<!-- NMS Advantage Section -->
+<section class="nms-advantage py-5">
+    <div class="container">
+        <div class="row text-center mb-5">
+            <div class="col-12">
+                <div class="section-header" data-aos="fade-up">
+                    <span class="section-badge">Why Choose Us</span>
+                    <h2 class="section-title">The NMS Advantage</h2>
+                    <p class="section-subtitle">Delivering excellence through innovation, expertise, and comprehensive solutions</p>
+                </div>
+            </div>
+        </div>
+        <div class="row g-4">
+            <div class="col-lg-3 col-md-6" data-aos="fade-up" data-aos-delay="100">
+                <div class="advantage-card">
+                    <div class="advantage-icon">
+                        <i class="fas fa-network-wired"></i>
+                        <div class="icon-bg"></div>
+                    </div>
+                    <h4>Network Excellence</h4>
+                    <p>Comprehensive network management solutions for modern telecom infrastructure with 99.9% reliability</p>
+                    <div class="card-hover-effect"></div>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-6" data-aos="fade-up" data-aos-delay="200">
+                <div class="advantage-card">
+                    <div class="advantage-icon">
+                        <i class="fas fa-cogs"></i>
+                        <div class="icon-bg"></div>
+                    </div>
+                    <h4>Smart Automation</h4>
+                    <p>Advanced automation capabilities to streamline operations and reduce costs by up to 60%</p>
+                    <div class="card-hover-effect"></div>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-6" data-aos="fade-up" data-aos-delay="300">
+                <div class="advantage-card">
+                    <div class="advantage-icon">
+                        <i class="fas fa-chart-line"></i>
+                        <div class="icon-bg"></div>
+                    </div>
+                    <h4>AI Analytics</h4>
+                    <p>Powerful AI-driven analytics tools for data-driven decision making and predictive insights</p>
+                    <div class="card-hover-effect"></div>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-6" data-aos="fade-up" data-aos-delay="400">
+                <div class="advantage-card">
+                    <div class="advantage-icon">
+                        <i class="fas fa-shield-alt"></i>
+                        <div class="icon-bg"></div>
+                    </div>
+                    <h4>Enterprise Security</h4>
+                    <p>Military-grade security features to protect critical network assets and sensitive data</p>
+                    <div class="card-hover-effect"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- About Section with Interactive Tabs -->
+<section class="about-section py-5">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-4" data-aos="fade-right">
+                <div class="about-intro">
+                    <span class="section-badge">About NMSWorks</span>
+                    <h2 class="section-title">Pioneering Telecom Innovation</h2>
+                    <p>Leading provider of telecom software solutions, serving operators worldwide with innovative OSS/BSS platforms and network management systems for over 15 years.</p>
+                    <div class="about-metrics">
+                        <div class="metric">
+                            <div class="metric-number" data-count="125">0</div>
+                            <div class="metric-label">Projects Delivered</div>
+                        </div>
+                        <div class="metric">
+                            <div class="metric-number" data-count="14">0</div>
+                            <div class="metric-label">Countries Served</div>
+                        </div>
                     </div>
                 </div>
             </div>
-            <div class="row g-4">
-                <div class="col-lg-3 col-md-6" data-aos="fade-up" data-aos-delay="100">
-                    <div class="advantage-card">
-                        <div class="advantage-icon">
+            <div class="col-lg-8" data-aos="fade-left">
+                <div class="about-tabs-container">
+                    <ul class="nav nav-tabs about-tabs" id="aboutTabs" role="tablist">
+                        <li class="nav-item" role="presentation">
+                            <button class="nav-link active" id="technology-tab" data-bs-toggle="tab" data-bs-target="#technology" type="button">
+                                <i class="fas fa-microchip me-2"></i>Technology
+                            </button>
+                        </li>
+                        <li class="nav-item" role="presentation">
+                            <button class="nav-link" id="vendors-tab" data-bs-toggle="tab" data-bs-target="#vendors" type="button">
+                                <i class="fas fa-handshake me-2"></i>Partners
+                            </button>
+                        </li>
+                        <li class="nav-item" role="presentation">
+                            <button class="nav-link" id="functionality-tab" data-bs-toggle="tab" data-bs-target="#functionality" type="button">
+                                <i class="fas fa-cogs me-2"></i>Features
+                            </button>
+                        </li>
+                        <li class="nav-item" role="presentation">
+                            <button class="nav-link" id="metrics-tab" data-bs-toggle="tab" data-bs-target="#metrics" type="button">
+                                <i class="fas fa-chart-bar me-2"></i>Metrics
+                            </button>
+                        </li>
+                    </ul>
+                    <div class="tab-content about-tab-content" id="aboutTabsContent">
+                        <div class="tab-pane fade show active" id="technology" role="tabpanel">
+                            <div class="row g-4 mt-3">
+                                <div class="col-md-6">
+                                    <div class="tab-image">
+                                        <img src="https://images.unsplash.com/photo-1560264280-88b68371db39?w=400&h=300&fit=crop&crop=center" alt="Partners" class="img-fluid">
+                                        <div class="image-overlay">
+                                            <i class="fas fa-play"></i>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <h4>Cutting-Edge Technology Stack</h4>
+                                    <p>Our solutions leverage the latest technologies including cloud-native architectures, microservices, AI/ML, and modern web frameworks to deliver scalable and robust telecom software platforms.</p>
+                                    <ul class="tech-list">
+                                        <li><i class="fas fa-check-circle me-2"></i>Cloud-Native Architecture</li>
+                                        <li><i class="fas fa-check-circle me-2"></i>AI/ML Integration</li>
+                                        <li><i class="fas fa-check-circle me-2"></i>Microservices Design</li>
+                                        <li><i class="fas fa-check-circle me-2"></i>Real-time Processing</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="tab-pane fade" id="vendors" role="tabpanel">
+                            <div class="row g-4 mt-3">
+                                <div class="col-md-6">
+                                    <div class="tab-image">
+                                        <img src="https://images.unsplash.com/photo-1560264280-88b68371db39?w=400&h=300&fit=crop&crop=center" alt="Partners" class="img-fluid">
+                                        <div class="image-overlay">
+                                            <i class="fas fa-handshake"></i>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <h4>Strategic Global Partnerships</h4>
+                                    <p>We work with leading technology vendors and maintain strategic partnerships with major telecom equipment manufacturers, software providers, and system integrators worldwide.</p>
+                                    <div class="partner-badges">
+                                        <span class="badge">Cisco Certified</span>
+                                        <span class="badge">AWS Partner</span>
+                                        <span class="badge">Microsoft Gold</span>
+                                        <span class="badge">Oracle Validated</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="tab-pane fade" id="functionality" role="tabpanel">
+                            <div class="row g-4 mt-3">
+                                <div class="col-md-6">
+                                    <div class="tab-image">
+                                        <img src="https://images.unsplash.com/photo-1551434678-e076c223a692?w=400&h=300&fit=crop&crop=center" alt="Functionality" class="img-fluid">
+                                        <div class="image-overlay">
+                                            <i class="fas fa-cogs"></i>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <h4>Comprehensive Platform Features</h4>
+                                    <p>Our platforms offer end-to-end functionality covering network inventory, service fulfillment, assurance, customer management, billing, and analytics in integrated solutions.</p>
+                                    <div class="feature-grid">
+                                        <div class="feature-item">
+                                            <i class="fas fa-network-wired"></i>
+                                            <span>Network Inventory & Discovery</span>
+                                        </div>
+                                        <div class="feature-item">
+                                            <i class="fas fa-tasks"></i>
+                                            <span>Service Fulfillment</span>
+                                        </div>
+                                        <div class="feature-item">
+                                            <i class="fas fa-shield-alt"></i>
+                                            <span>Service Assurance</span>
+                                        </div>
+                                        <div class="feature-item">
+                                            <i class="fas fa-users"></i>
+                                            <span>Customer Management</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="tab-pane fade" id="metrics" role="tabpanel">
+                            <div class="row g-4 mt-3">
+                                <div class="col-md-6">
+                                    <div class="tab-image">
+                                        <img src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=400&h=300&fit=crop&crop=center" alt="Metrics" class="img-fluid">
+                                        <div class="image-overlay">
+                                            <i class="fas fa-chart-line"></i>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <h4>Performance & Analytics</h4>
+                                    <p>Track and measure network performance, service quality, customer satisfaction, and operational efficiency with comprehensive dashboards and reporting capabilities.</p>
+                                    <div class="metrics-grid">
+                                        <div class="metric-card">
+                                            <div class="metric-value">99.9%</div>
+                                            <div class="metric-name">Uptime</div>
+                                        </div>
+                                        <div class="metric-card">
+                                            <div class="metric-value">60%</div>
+                                            <div class="metric-name">Cost Reduction</div>
+                                        </div>
+                                        <div class="metric-card">
+                                            <div class="metric-value">24/7</div>
+                                            <div class="metric-name">Support</div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Key Solutions Showcase -->
+<section class="solutions-showcase py-5">
+    <div class="container">
+        <div class="row text-center mb-5">
+            <div class="col-12">
+                <div class="section-header" data-aos="fade-up">
+                    <span class="section-badge">Our Solutions</span>
+                    <h2 class="section-title">Comprehensive Telecom Solutions</h2>
+                    <p class="section-subtitle">Discover our range of innovative solutions designed for modern telecom operations</p>
+                </div>
+            </div>
+        </div>
+        <div class="row g-4">
+            <div class="col-lg-3 col-md-6" data-aos="zoom-in" data-aos-delay="100">
+                <div class="solution-card">
+                    <div class="solution-image">
+                        <img src="https://images.unsplash.com/photo-1558494949-ef010cbdcc31?w=300&h=200&fit=crop&crop=center" alt="Network Infrastructure">
+                        <div class="solution-overlay">
                             <i class="fas fa-network-wired"></i>
-                            <div class="icon-bg"></div>
                         </div>
-                        <h4>Network Excellence</h4>
-                        <p>Comprehensive network management solutions for modern telecom infrastructure with 99.9% reliability</p>
-                        <div class="card-hover-effect"></div>
                     </div>
-                </div>
-                <div class="col-lg-3 col-md-6" data-aos="fade-up" data-aos-delay="200">
-                    <div class="advantage-card">
-                        <div class="advantage-icon">
-                            <i class="fas fa-cogs"></i>
-                            <div class="icon-bg"></div>
-                        </div>
-                        <h4>Smart Automation</h4>
-                        <p>Advanced automation capabilities to streamline operations and reduce costs by up to 60%</p>
-                        <div class="card-hover-effect"></div>
+                    <div class="solution-content">
+                        <h5>Network Infrastructure</h5>
+                        <p>Advanced network management and monitoring solutions</p>
                     </div>
+                    <div class="solution-hover-effect"></div>
                 </div>
-                <div class="col-lg-3 col-md-6" data-aos="fade-up" data-aos-delay="300">
-                    <div class="advantage-card">
-                        <div class="advantage-icon">
+            </div>
+            <div class="col-lg-3 col-md-6" data-aos="zoom-in" data-aos-delay="200">
+                <div class="solution-card">
+                    <div class="solution-image">
+                        <img src="https://images.unsplash.com/photo-1562408590-e32931084e23?w=300&h=200&fit=crop&crop=center" alt="Data Analytics">
+                        <div class="solution-overlay">
                             <i class="fas fa-chart-line"></i>
-                            <div class="icon-bg"></div>
                         </div>
-                        <h4>AI Analytics</h4>
-                        <p>Powerful AI-driven analytics tools for data-driven decision making and predictive insights</p>
-                        <div class="card-hover-effect"></div>
                     </div>
+                    <div class="solution-content">
+                        <h5>AI-Powered Analytics</h5>
+                        <p>Intelligent data analysis and predictive insights</p>
+                    </div>
+                    <div class="solution-hover-effect"></div>
                 </div>
-                <div class="col-lg-3 col-md-6" data-aos="fade-up" data-aos-delay="400">
-                    <div class="advantage-card">
-                        <div class="advantage-icon">
-                            <i class="fas fa-shield-alt"></i>
-                            <div class="icon-bg"></div>
+            </div>
+            <div class="col-lg-3 col-md-6" data-aos="zoom-in" data-aos-delay="300">
+                <div class="solution-card">
+                    <div class="solution-image">
+                        <img src="https://images.unsplash.com/photo-1573164713714-d95e436ab8d6?w=300&h=200&fit=crop&crop=center" alt="Cloud Solutions">
+                        <div class="solution-overlay">
+                            <i class="fas fa-cloud"></i>
                         </div>
-                        <h4>Enterprise Security</h4>
-                        <p>Military-grade security features to protect critical network assets and sensitive data</p>
-                        <div class="card-hover-effect"></div>
+                    </div>
+                    <div class="solution-content">
+                        <h5>Cloud Solutions</h5>
+                        <p>Scalable cloud-native telecom platforms</p>
+                    </div>
+                    <div class="solution-hover-effect"></div>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-6" data-aos="zoom-in" data-aos-delay="400">
+                <div class="solution-card">
+                    <div class="solution-image">
+                        <img src="https://images.unsplash.com/photo-1551434678-e076c223a692?w=300&h=200&fit=crop&crop=center" alt="Automation">
+                        <div class="solution-overlay">
+                            <i class="fas fa-robot"></i>
+                        </div>
+                    </div>
+                    <div class="solution-content">
+                        <h5>Smart Automation</h5>
+                        <p>Automated workflows and intelligent operations</p>
+                    </div>
+                    <div class="solution-hover-effect"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Clients Section with Animated Slider -->
+<section class="clients-section py-5">
+    <div class="container">
+        <div class="row text-center mb-5">
+            <div class="col-12">
+                <div class="section-header" data-aos="fade-up">
+                    <span class="section-badge">Our Clients</span>
+                    <h2 class="section-title">Trusted by Industry Leaders</h2>
+                    <p class="section-subtitle">Serving leading telecom operators and enterprises worldwide</p>
+                </div>
+            </div>
+        </div>
+        <div class="clients-slider-container" data-aos="fade-up" data-aos-delay="200">
+            <div class="clients-slider">
+                <div class="client-logo">
+                    <img src="airtel.png" alt="Airtel">
+
+                </div>
+                <div class="client-logo">
+                    <img src="bonefit.png" alt="Bofinet">
+
+                </div>
+                <div class="client-logo">
+                    <img src="tata.png" alt="Tata Communications">
+                </div>
+                <div class="client-logo">
+                    <img src="drbt.png" alt="DRBT">
+                </div>
+                <div class="client-logo">
+                    <img src="iti.png" alt="ITI">
+                </div>
+                <div class="client-logo">
+                    <img src="nixi.png" alt="nixi">
+                </div>
+                <div class="client-logo">
+                    <img src="ibm.png" alt="IBM">
+                </div>
+                <div class="client-logo">
+                    <img src="neotel.png" alt="IBM">
+                </div>
+                <div class="client-logo">
+                    <img src="hp.png" alt="HP">
+                </div>
+                <div class="client-logo">
+                    <img src="seacon.png" alt="Seacom">
+                </div>
+                <div class="client-logo">
+                    <img src="eci.png" alt="eci">
+                </div>
+                <div class="client-logo">
+                    <img src="mntl.png" alt="MTNL">
+                </div>
+                <div class="client-logo">
+                    <img src="reliance.png" alt="Reliance">
+                </div>
+                <div class="client-logo">
+                    <img src="sbi.png" alt="Reliance">
+                </div>
+                <div class="client-logo">
+                    <img src="himachal.jpg" alt="">
+                </div>
+                <div class="client-logo">
+                    <img src="rainbow.png" alt="">
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- CTA Section -->
+<section class="cta-section py-5">
+    <div class="container">
+        <div class="row justify-content-center text-center">
+            <div class="col-lg-8">
+                <div class="cta-content" data-aos="zoom-in">
+                    <h2>Ready to Transform Your Telecom Operations?</h2>
+                    <p>Join hundreds of telecom operators who trust NMSWorks for their critical network operations and business systems.</p>
+                    <div class="cta-buttons">
+                        <a href="contact.html" class="btn btn-primary btn-lg me-3">
+                            <i class="fas fa-rocket me-2"></i>Get Started Today
+                            <span class="btn-shine"></span>
+                        </a>
+                        <a href="portfolio/products.html" class="btn btn-outline-primary btn-lg">
+                            <i class="fas fa-eye me-2"></i>View Our Products
+                        </a>
                     </div>
                 </div>
             </div>
         </div>
-    </section>
+    </div>
+</section>
 
-    <!-- About Section with Interactive Tabs -->
-    <section class="about-section py-5">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-4" data-aos="fade-right">
-                    <div class="about-intro">
-                        <span class="section-badge">About NMSWorks</span>
-                        <h2 class="section-title">Pioneering Telecom Innovation</h2>
-                        <p>Leading provider of telecom software solutions, serving operators worldwide with innovative OSS/BSS platforms and network management systems for over 15 years.</p>
-                        <div class="about-metrics">
-                            <div class="metric">
-                                <div class="metric-number" data-count="500">0</div>
-                                <div class="metric-label">Projects Delivered</div>
-                            </div>
-                            <div class="metric">
-                                <div class="metric-number" data-count="50">0</div>
-                                <div class="metric-label">Countries Served</div>
-                            </div>
-                        </div>
+<!-- Footer -->
+<footer class="footer py-5">
+    <div class="container">
+        <div class="row g-4">
+            <div class="col-lg-4 col-md-6">
+                <div class="footer-brand">
+                    <div class="footer-logo">
+                        <img src="nms_logo.png" alt="NMSWorks">
+                        <span>NMSWorks</span>
+                    </div>
+                    <p>Leading provider of next-generation telecom software solutions, empowering operators worldwide with innovative OSS/BSS platforms.</p>
+                    <div class="social-links">
+                        <a href="#" class="social-link"><i class="fab fa-linkedin"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-twitter"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-facebook"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-youtube"></i></a>
                     </div>
                 </div>
-                <div class="col-lg-8" data-aos="fade-left">
-                    <div class="about-tabs-container">
-                        <ul class="nav nav-tabs about-tabs" id="aboutTabs" role="tablist">
-                            <li class="nav-item" role="presentation">
-                                <button class="nav-link active" id="technology-tab" data-bs-toggle="tab" data-bs-target="#technology" type="button">
-                                    <i class="fas fa-microchip me-2"></i>Technology
-                                </button>
-                            </li>
-                            <li class="nav-item" role="presentation">
-                                <button class="nav-link" id="vendors-tab" data-bs-toggle="tab" data-bs-target="#vendors" type="button">
-                                    <i class="fas fa-handshake me-2"></i>Partners
-                                </button>
-                            </li>
-                            <li class="nav-item" role="presentation">
-                                <button class="nav-link" id="functionality-tab" data-bs-toggle="tab" data-bs-target="#functionality" type="button">
-                                    <i class="fas fa-cogs me-2"></i>Features
-                                </button>
-                            </li>
-                            <li class="nav-item" role="presentation">
-                                <button class="nav-link" id="metrics-tab" data-bs-toggle="tab" data-bs-target="#metrics" type="button">
-                                    <i class="fas fa-chart-bar me-2"></i>Metrics
-                                </button>
-                            </li>
-                        </ul>
-                        <div class="tab-content about-tab-content" id="aboutTabsContent">
-                            <div class="tab-pane fade show active" id="technology" role="tabpanel">
-                                <div class="row g-4 mt-3">
-                                    <div class="col-md-6">
-                                        <div class="tab-image">
-                                            <img src="https://images.unsplash.com/photo-1560264280-88b68371db39?w=400&h=300&fit=crop&crop=center" alt="Partners" class="img-fluid">
-                                            <div class="image-overlay">
-                                                <i class="fas fa-play"></i>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="col-md-6">
-                                        <h4>Cutting-Edge Technology Stack</h4>
-                                        <p>Our solutions leverage the latest technologies including cloud-native architectures, microservices, AI/ML, and modern web frameworks to deliver scalable and robust telecom software platforms.</p>
-                                        <ul class="tech-list">
-                                            <li><i class="fas fa-check-circle me-2"></i>Cloud-Native Architecture</li>
-                                            <li><i class="fas fa-check-circle me-2"></i>AI/ML Integration</li>
-                                            <li><i class="fas fa-check-circle me-2"></i>Microservices Design</li>
-                                            <li><i class="fas fa-check-circle me-2"></i>Real-time Processing</li>
-                                        </ul>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="tab-pane fade" id="vendors" role="tabpanel">
-                                <div class="row g-4 mt-3">
-                                    <div class="col-md-6">
-                                        <div class="tab-image">
-                                            <img src="https://images.unsplash.com/photo-1560264280-88b68371db39?w=400&h=300&fit=crop&crop=center" alt="Partners" class="img-fluid">
-                                            <div class="image-overlay">
-                                                <i class="fas fa-handshake"></i>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="col-md-6">
-                                        <h4>Strategic Global Partnerships</h4>
-                                        <p>We work with leading technology vendors and maintain strategic partnerships with major telecom equipment manufacturers, software providers, and system integrators worldwide.</p>
-                                        <div class="partner-badges">
-                                            <span class="badge">Cisco Certified</span>
-                                            <span class="badge">AWS Partner</span>
-                                            <span class="badge">Microsoft Gold</span>
-                                            <span class="badge">Oracle Validated</span>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="tab-pane fade" id="functionality" role="tabpanel">
-                                <div class="row g-4 mt-3">
-                                    <div class="col-md-6">
-                                        <div class="tab-image">
-                                            <img src="https://images.unsplash.com/photo-1551434678-e076c223a692?w=400&h=300&fit=crop&crop=center" alt="Functionality" class="img-fluid">
-                                            <div class="image-overlay">
-                                                <i class="fas fa-cogs"></i>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="col-md-6">
-                                        <h4>Comprehensive Platform Features</h4>
-                                        <p>Our platforms offer end-to-end functionality covering network inventory, service fulfillment, assurance, customer management, billing, and analytics in integrated solutions.</p>
-                                        <div class="feature-grid">
-                                            <div class="feature-item">
-                                                <i class="fas fa-network-wired"></i>
-                                                <span>Network Inventory</span>
-                                            </div>
-                                            <div class="feature-item">
-                                                <i class="fas fa-tasks"></i>
-                                                <span>Service Fulfillment</span>
-                                            </div>
-                                            <div class="feature-item">
-                                                <i class="fas fa-shield-alt"></i>
-                                                <span>Service Assurance</span>
-                                            </div>
-                                            <div class="feature-item">
-                                                <i class="fas fa-users"></i>
-                                                <span>Customer Management</span>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="tab-pane fade" id="metrics" role="tabpanel">
-                                <div class="row g-4 mt-3">
-                                    <div class="col-md-6">
-                                        <div class="tab-image">
-                                            <img src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=400&h=300&fit=crop&crop=center" alt="Metrics" class="img-fluid">
-                                            <div class="image-overlay">
-                                                <i class="fas fa-chart-line"></i>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="col-md-6">
-                                        <h4>Performance & Analytics</h4>
-                                        <p>Track and measure network performance, service quality, customer satisfaction, and operational efficiency with comprehensive dashboards and reporting capabilities.</p>
-                                        <div class="metrics-grid">
-                                            <div class="metric-card">
-                                                <div class="metric-value">99.9%</div>
-                                                <div class="metric-name">Uptime</div>
-                                            </div>
-                                            <div class="metric-card">
-                                                <div class="metric-value">60%</div>
-                                                <div class="metric-name">Cost Reduction</div>
-                                            </div>
-                                            <div class="metric-card">
-                                                <div class="metric-value">24/7</div>
-                                                <div class="metric-name">Support</div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
+            </div>
+            <div class="col-lg-2 col-md-6">
+                <h5>Company</h5>
+                <ul class="footer-links">
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="about/people.html">About</a></li>
+                    <li><a href="about/career.html">Career</a></li>
+                    <li><a href="about/news-events.html">News & Events</a></li>
+                    <li><a href="privacy-policy.html">Privacy Policy</a></li>
+                </ul>
+            </div>
+            <div class="col-lg-2 col-md-6">
+                <h5>Solutions</h5>
+                <ul class="footer-links">
+                    <li><a href="portfolio/products.html">Products</a></li>
+                    <li><a href="portfolio/solutions.html">Solutions</a></li>
+                    <li><a href="innovation.html">Innovation</a></li>
+                    <li><a href="partners.html">Partners</a></li>
+                    <li><a href="resources.html">Resources</a></li>
+                </ul>
+            </div>
+            <div class="col-lg-4 col-md-6">
+                <h5>Contact Info</h5>
+                <div class="contact-info">
+                    <div class="contact-item">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <span>NMSWorks Software Private Limited,<br>#E6-01,IITM Research Park<br>Kanagam Road,Taramani,<br>Chennai - 600 113, Tamil Nadu, INDIA</span>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fas fa-phone"></i>
+                        <span>+91 44 66630608,<br>+91-44-66630606,<br>+91-44-66630604</span>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fas fa-envelope"></i>
+                        <span>info@nmsworks.co.in</span>
                     </div>
                 </div>
             </div>
         </div>
-    </section>
-
-    <!-- Key Solutions Showcase -->
-    <section class="solutions-showcase py-5">
-        <div class="container">
-            <div class="row text-center mb-5">
-                <div class="col-12">
-                    <div class="section-header" data-aos="fade-up">
-                        <span class="section-badge">Our Solutions</span>
-                        <h2 class="section-title">Comprehensive Telecom Solutions</h2>
-                        <p class="section-subtitle">Discover our range of innovative solutions designed for modern telecom operations</p>
-                    </div>
-                </div>
-            </div>
-            <div class="row g-4">
-                <div class="col-lg-3 col-md-6" data-aos="zoom-in" data-aos-delay="100">
-                    <div class="solution-card">
-                        <div class="solution-image">
-                            <img src="https://images.unsplash.com/photo-1558494949-ef010cbdcc31?w=300&h=200&fit=crop&crop=center" alt="Network Infrastructure">
-                            <div class="solution-overlay">
-                                <i class="fas fa-network-wired"></i>
-                            </div>
-                        </div>
-                        <div class="solution-content">
-                            <h5>Network Infrastructure</h5>
-                            <p>Advanced network management and monitoring solutions</p>
-                        </div>
-                        <div class="solution-hover-effect"></div>
-                    </div>
-                </div>
-                <div class="col-lg-3 col-md-6" data-aos="zoom-in" data-aos-delay="200">
-                    <div class="solution-card">
-                        <div class="solution-image">
-                            <img src="https://images.unsplash.com/photo-1562408590-e32931084e23?w=300&h=200&fit=crop&crop=center" alt="Data Analytics">
-                            <div class="solution-overlay">
-                                <i class="fas fa-chart-line"></i>
-                            </div>
-                        </div>
-                        <div class="solution-content">
-                            <h5>AI-Powered Analytics</h5>
-                            <p>Intelligent data analysis and predictive insights</p>
-                        </div>
-                        <div class="solution-hover-effect"></div>
-                    </div>
-                </div>
-                <div class="col-lg-3 col-md-6" data-aos="zoom-in" data-aos-delay="300">
-                    <div class="solution-card">
-                        <div class="solution-image">
-                            <img src="https://images.unsplash.com/photo-1573164713714-d95e436ab8d6?w=300&h=200&fit=crop&crop=center" alt="Cloud Solutions">
-                            <div class="solution-overlay">
-                                <i class="fas fa-cloud"></i>
-                            </div>
-                        </div>
-                        <div class="solution-content">
-                            <h5>Cloud Solutions</h5>
-                            <p>Scalable cloud-native telecom platforms</p>
-                        </div>
-                        <div class="solution-hover-effect"></div>
-                    </div>
-                </div>
-                <div class="col-lg-3 col-md-6" data-aos="zoom-in" data-aos-delay="400">
-                    <div class="solution-card">
-                        <div class="solution-image">
-                            <img src="https://images.unsplash.com/photo-1551434678-e076c223a692?w=300&h=200&fit=crop&crop=center" alt="Automation">
-                            <div class="solution-overlay">
-                                <i class="fas fa-robot"></i>
-                            </div>
-                        </div>
-                        <div class="solution-content">
-                            <h5>Smart Automation</h5>
-                            <p>Automated workflows and intelligent operations</p>
-                        </div>
-                        <div class="solution-hover-effect"></div>
-                    </div>
-                </div>
+        <hr class="footer-divider">
+        <div class="row">
+            <div class="col-12 text-center">
+                <p class="copyright">© 2025 NMSWorks. All rights reserved.</p>
             </div>
         </div>
-    </section>
+    </div>
+</footer>
 
-    <!-- Clients Section with Animated Slider -->
-    <section class="clients-section py-5">
-        <div class="container">
-            <div class="row text-center mb-5">
-                <div class="col-12">
-                    <div class="section-header" data-aos="fade-up">
-                        <span class="section-badge">Our Clients</span>
-                        <h2 class="section-title">Trusted by Industry Leaders</h2>
-                        <p class="section-subtitle">Serving leading telecom operators and enterprises worldwide</p>
-                    </div>
-                </div>
-            </div>
-            <div class="clients-slider-container" data-aos="fade-up" data-aos-delay="200">
-                <div class="clients-slider">
-                    <div class="client-logo">
-                        <img src="https://images.unsplash.com/photo-1611224923853-80b023f02d71?w=150&h=80&fit=crop&crop=center" alt="Airtel">
-                        <span>Airtel</span>
-                    </div>
-                    <div class="client-logo">
-                        <img src="https://images.unsplash.com/photo-1611224923853-80b023f02d71?w=150&h=80&fit=crop&crop=center" alt="Bofinet">
-                        <span>Bofinet</span>
-                    </div>
-                    <div class="client-logo">
-                        <img src="https://images.unsplash.com/photo-1611224923853-80b023f02d71?w=150&h=80&fit=crop&crop=center" alt="Tata Communications">
-                        <span>Tata Comm</span>
-                    </div>
-                    <div class="client-logo">
-                        <img src="https://images.unsplash.com/photo-1611224923853-80b023f02d71?w=150&h=80&fit=crop&crop=center" alt="ITI">
-                        <span>ITI</span>
-                    </div>
-                    <div class="client-logo">
-                        <img src="https://images.unsplash.com/photo-1611224923853-80b023f02d71?w=150&h=80&fit=crop&crop=center" alt="IBM">
-                        <span>IBM</span>
-                    </div>
-                    <div class="client-logo">
-                        <img src="https://images.unsplash.com/photo-1611224923853-80b023f02d71?w=150&h=80&fit=crop&crop=center" alt="HP">
-                        <span>HP</span>
-                    </div>
-                    <div class="client-logo">
-                        <img src="https://images.unsplash.com/photo-1611224923853-80b023f02d71?w=150&h=80&fit=crop&crop=center" alt="Seacom">
-                        <span>Seacom</span>
-                    </div>
-                    <div class="client-logo">
-                        <img src="https://images.unsplash.com/photo-1611224923853-80b023f02d71?w=150&h=80&fit=crop&crop=center" alt="MTNL">
-                        <span>MTNL</span>
-                    </div>
-                    <div class="client-logo">
-                        <img src="https://images.unsplash.com/photo-1611224923853-80b023f02d71?w=150&h=80&fit=crop&crop=center" alt="Reliance">
-                        <span>Reliance</span>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
+<!-- Back to Top Button -->
+<button class="back-to-top" id="backToTop">
+    <i class="fas fa-arrow-up"></i>
+</button>
 
-    <!-- CTA Section -->
-    <section class="cta-section py-5">
-        <div class="container">
-            <div class="row justify-content-center text-center">
-                <div class="col-lg-8">
-                    <div class="cta-content" data-aos="zoom-in">
-                        <h2>Ready to Transform Your Telecom Operations?</h2>
-                        <p>Join hundreds of telecom operators who trust NMSWorks for their critical network operations and business systems.</p>
-                        <div class="cta-buttons">
-                            <a href="contact.html" class="btn btn-primary btn-lg me-3">
-                                <i class="fas fa-rocket me-2"></i>Get Started Today
-                                <span class="btn-shine"></span>
-                            </a>
-                            <a href="portfolio/products.html" class="btn btn-outline-primary btn-lg">
-                                <i class="fas fa-eye me-2"></i>View Our Products
-                            </a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Footer -->
-    <footer class="footer py-5">
-        <div class="container">
-            <div class="row g-4">
-                <div class="col-lg-4 col-md-6">
-                    <div class="footer-brand">
-                        <div class="footer-logo">
-                            <img src="nms_logo.png" alt="NMSWorks">
-                            <span>NMSWorks</span>
-                        </div>
-                        <p>Leading provider of next-generation telecom software solutions, empowering operators worldwide with innovative OSS/BSS platforms.</p>
-                        <div class="social-links">
-                            <a href="#" class="social-link"><i class="fab fa-linkedin"></i></a>
-                            <a href="#" class="social-link"><i class="fab fa-twitter"></i></a>
-                            <a href="#" class="social-link"><i class="fab fa-facebook"></i></a>
-                            <a href="#" class="social-link"><i class="fab fa-youtube"></i></a>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-2 col-md-6">
-                    <h5>Company</h5>
-                    <ul class="footer-links">
-                        <li><a href="#home">Home</a></li>
-                        <li><a href="about/people.html">About</a></li>
-                        <li><a href="about/career.html">Career</a></li>
-                        <li><a href="about/news-events.html">News & Events</a></li>
-                        <li><a href="privacy-policy.html">Privacy Policy</a></li>
-                    </ul>
-                </div>
-                <div class="col-lg-2 col-md-6">
-                    <h5>Solutions</h5>
-                    <ul class="footer-links">
-                        <li><a href="portfolio/products.html">Products</a></li>
-                        <li><a href="portfolio/solutions.html">Solutions</a></li>
-                        <li><a href="innovation.html">Innovation</a></li>
-                        <li><a href="partners.html">Partners</a></li>
-                        <li><a href="resources.html">Resources</a></li>
-                    </ul>
-                </div>
-                <div class="col-lg-4 col-md-6">
-                    <h5>Contact Info</h5>
-                    <div class="contact-info">
-                        <div class="contact-item">
-                            <i class="fas fa-map-marker-alt"></i>
-                            <span>123 Technology Park<br>Electronic City, Bangalore<br>Karnataka 560100, India</span>
-                        </div>
-                        <div class="contact-item">
-                            <i class="fas fa-phone"></i>
-                            <span>+91 80 1234 5678</span>
-                        </div>
-                        <div class="contact-item">
-                            <i class="fas fa-envelope"></i>
-                            <span>info@nmsworks.com</span>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <hr class="footer-divider">
-            <div class="row">
-                <div class="col-12 text-center">
-                    <p class="copyright">&copy; 2024 NMSWorks. All rights reserved.</p>
-                </div>
-            </div>
-        </div>
-    </footer>
-
-    <!-- Back to Top Button -->
-    <button class="back-to-top" id="backToTop">
-        <i class="fas fa-arrow-up"></i>
-    </button>
-
-    <!-- Scripts -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
-    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-    <script src="./src/main.js"></script>
+<!-- Scripts -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script src="./src/main.js"></script>
 </body>
 </html>
